@@ -1,0 +1,120 @@
+			----------  Virtual Server Configs begin here  ----------
+		Nodes listing
+
+create node 2ks-intersrch-1 address 170.22.109.61%109
+create node 2ks-intersrch-2 address 170.22.109.62%109
+create node 2ks-ldapp-01 address 170.22.109.75%109
+create node 2ks-ldapp-01-port80 address 170.22.109.60%109
+					 Alias: 2ks-ldapp-02-port80
+					 Alias: sm-ldapwebp-2
+create node 2ks-ldapp-02 address 170.22.109.76%109
+create node 2ks-ldapp-03 address 170.22.109.77%109
+create node 2ks-ln-mime4a address 170.22.109.40%109
+create node 2ks-ln-mime4b address 170.22.109.41%109
+create node NAT_7citrixwi address 127.0.0.7%109
+create node NAT_server address 127.0.0.1%109
+create node NAT_server1 address 127.0.0.2%109
+create node NAT_server3 address 127.0.0.3%109
+create node NAT_server4 address 127.0.0.4%109
+create node NAT_server5 address 127.0.0.5%109
+create node NAT_server6 address 127.0.0.6%109
+create node eweb16k address 170.22.109.16%109
+					 Alias: eweb16k-vru
+create node eweb26k address 170.22.109.17%109
+					 Alias: eweb26k-vru
+create node nts-scrnsurfp1 address 170.22.109.37%109
+create node nts-scrnsurfp2 address 170.22.109.38%109
+create node sigaba-web2 address 170.22.109.69%109
+create node sigaba-web3 address 170.22.109.68%109
+create node sm-ctrx-wi1 address 170.22.109.81%109
+create node sm-ctrx-wi2 address 170.22.109.82%109
+create node sm-fep-ctrxblues-wi1 address 170.22.109.119%109
+create node sm-fep-ctrxblues-wi2 address 170.22.109.120%109
+create node sm-ldapwebp-1 address 170.22.109.59%109
+create node sm-tibdmz-p1 address 170.22.109.53%109
+create node sm-tibdmz-p2 address 170.22.109.54%109
+create node sv-ctrxweb-p1 address 170.22.109.95%109
+create node sv-ctrxweb-p2 address 170.22.109.96%109
+create node sv-secweb-p1 address 170.22.109.126%109
+create node sv-secweb-p2 address 170.22.109.127%109
+create node sv-secwebf-p1 address 170.22.109.129%109
+create node sv-secwebf-p2 address 170.22.109.130%109
+create node upstream_downstream address 170.22.109.9%109
+
+		Existing Health Monitors
+
+create monitor http inter-search_mon destination *.8765
+create monitor tcp-half-open 2ks-ldapp-01-port80_mon destination *:7080
+create monitor http 2ks-ldapp-02-port80_mon destination *.80
+create monitor tcp-half-open NAT_7citrixwi_mon destination *:any
+create monitor tcp-half-open NAT_server_mon destination *:any
+create monitor tcp-half-open NAT_server1_mon destination *:any
+create monitor tcp-half-open NAT_server3_mon destination *:any
+create monitor tcp-half-open NAT_server4_mon destination *:any
+create monitor tcp-half-open NAT_server5_mon destination *:any
+create monitor tcp-half-open NAT_server6_mon destination *:any
+create monitor http Citrix-Web-Interface_mon destination *.8080
+create monitor http fep-citrixblues-web-interface_mon destination *.8080
+create monitor tcp-half-open sm-ldapwebp-1_mon destination *:80
+create monitor tcp-half-open sm-ldapwebp-2_mon destination *:80
+create monitor tcp-half-open b2b-tibco-prod_mon destination *:443
+
+		Custom traffic profiles
+
+create profile tcp  create profile http ScreenSurfer-http-profile fallback-server nts-scrnsurfp2
+create profile http inter-search-http-profile fallback-server 2ks-intersrch-2
+create profile tcp ldapp-tcp-profile idle-timeout 30
+create profile http secweb-http-profile fallback-server sv-secweb-p2
+create profile http secwebf-http-profile fallback-server sv-secwebf-p2
+create profile http sigaba-web-http-profile fallback-server sigaba-web3
+create profile http sm-ldapwebp-http-profile fallback-server sm-ldapwebp-2
+
+		Existing Pools
+
+create pool 2ks-ln-mime4_pool load-balancing-mode round-robin members add {  2ks-ln-mime4a:25  2ks-ln-mime4b:25  } monitor 2ks-ln-mime4_mon
+create pool Citrix-Web-Interface_pool load-balancing-mode round-robin members add {  sm-ctrx-wi1:any  sm-ctrx-wi2:any  } monitor Citrix-Web-Interface_mon
+create pool Prod-VRU_pool load-balancing-mode round-robin members add {  eweb16k:any  eweb26k:any  } monitor gateway-icmp
+create pool ScreenSurfer_pool load-balancing-mode round-robin members add {  nts-scrnsurfp1:any  nts-scrnsurfp2:any  } monitor gateway-icmp
+create pool associate.carefirst.com_pool load-balancing-mode round-robin members add {  sv-ctrxweb-p1:any  sv-ctrxweb-p2:any  } monitor gateway-icmp
+create pool b2b-tibco-prod_pool load-balancing-mode round-robin members add {  sm-tibdmz-p1:any  sm-tibdmz-p2:any  } monitor b2b-tibco-prod_mon
+create pool eweb_CareFirst_pool load-balancing-mode round-robin members add {  eweb26k:any  eweb16k:any  } monitor gateway-icmp
+create pool fep-citrixblues-web-interface_pool load-balancing-mode round-robin members add {  sm-fep-ctrxblues-wi1:any  sm-fep-ctrxblues-wi2:any  } monitor fep-citrixblues-web-interface_mon
+create pool inter-search_pool load-balancing-mode round-robin members add {  2ks-intersrch-1:any  2ks-intersrch-2:any  } monitor inter-search_mon
+create pool ldapp_pool load-balancing-mode round-robin members add {  2ks-ldapp-01:any  2ks-ldapp-02:any  2ks-ldapp-03:any  } monitor gateway-icmp
+create pool secweb_pool load-balancing-mode round-robin members add {  sv-secweb-p1:any  sv-secweb-p2:any  } monitor gateway-icmp
+create pool secwebf_pool load-balancing-mode round-robin members add {  sv-secwebf-p1:any  sv-secwebf-p2:any  } monitor gateway-icmp
+create pool sigaba-web_pool load-balancing-mode round-robin members add {  sigaba-web2:any  sigaba-web3:any  } monitor gateway-icmp
+create pool sm-ldapwebp_pool load-balancing-mode round-robin members add {  sm-ldapwebp-1:any  2ks-ldapp-01-port80:any  } monitor gateway-icmp
+
+		Existing Site Summary:
+
+create virtual 2ks-ln-mime4 { destination 170.22.109.25%109:25 profiles add { tcp } source-address-translation { type automap }  pool 2ks-ln-mime4_pool }
+
+create virtual Citrix-Web-Interface { destination 170.22.109.84%109:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool Citrix-Web-Interface_pool }
+
+create virtual Prod-VRU { destination 170.22.109.66%109:any profiles add { tcp } source-address-translation { type automap }  pool Prod-VRU_pool }
+
+create virtual ScreenSurfer { destination 170.22.109.39%109:any profiles add { tcp ScreenSurfer-http-profile } source-address-translation { type automap }  pool ScreenSurfer_pool }
+
+create virtual associate.carefirst.com { destination 170.22.109.89%109:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool associate.carefirst.com_pool }
+
+create virtual b2b-tibco-prod { destination 170.22.109.52%109:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool b2b-tibco-prod_pool }
+
+create virtual eweb_CareFirst { destination 170.22.109.30%109:any profiles add { tcp } source-address-translation { type automap }  pool eweb_CareFirst_pool }
+
+create virtual fep-citrixblues-web-interface { destination 170.22.109.118%109:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool fep-citrixblues-web-interface_pool }
+
+create virtual inter-search { destination 170.22.109.63%109:any profiles add { tcp inter-search-http-profile } source-address-translation { type automap }  pool inter-search_pool }
+
+create virtual ldapp { destination 170.22.109.58%109:any profiles add { tcp ldapp-tcp-profile } source-address-translation { type automap }  pool ldapp_pool }
+
+create virtual secweb { destination 170.22.109.125%109:any profiles add { tcp secweb-http-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool secweb_pool }
+
+create virtual secwebf { destination 170.22.109.128%109:any profiles add { tcp secwebf-http-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool secwebf_pool }
+
+create virtual sigaba-web { destination 170.22.109.71%109:any profiles add { tcp sigaba-web-http-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool sigaba-web_pool }
+
+create virtual sm-ldapwebp { destination 170.22.109.72%109:any profiles add { tcp sm-ldapwebp-http-profile } source-address-translation { type automap }  pool sm-ldapwebp_pool }
+
+There are 39 real servers defined
+There are 14 Virtual Servers defined

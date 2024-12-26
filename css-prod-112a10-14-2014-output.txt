@@ -1,0 +1,727 @@
+			----------  Virtual Server Configs begin here  ----------
+		Nodes listing
+
+create node NAT_server address 127.0.0.5%112
+create node catalogdata-1 address 170.22.112.38%112
+					 Alias: cfbireport-1
+					 Alias: pretib3
+					 Alias: pretib3-1
+					 Alias: providerpractitioner-1
+create node catalogdata-2 address 170.22.112.39%112
+					 Alias: cfbireport-2
+					 Alias: pretib4
+					 Alias: pretib4-1
+					 Alias: providerpractitioner-2
+create node catalogdata-3 address 170.22.112.40%112
+					 Alias: cfbireport-3
+					 Alias: cferrorcodedescsvc1
+					 Alias: empfeaturemgmt-1
+					 Alias: employerauditsvc1
+					 Alias: empportaladmin1
+					 Alias: empselfregistration-1
+					 Alias: pretib3-alias
+					 Alias: prodtib3
+					 Alias: prodtib3-12633
+					 Alias: prodtib3-12642
+					 Alias: prodtib3-12646
+					 Alias: prodtib3-9311
+					 Alias: prodtib3-CFFileUploadSvcs
+					 Alias: prodtib3-CFRegionFilterSearch
+					 Alias: prodtib3-CommunityBasedPrgmSrvs
+					 Alias: prodtib3-EmployerPortal
+					 Alias: prodtib3-ProvPracInfoVer
+					 Alias: prodtib3-UrgentCareSvcs
+					 Alias: prodtib3-alias
+					 Alias: prodtib3-cfprovinfoverp2i2
+					 Alias: prodtib3-e
+					 Alias: prodtib3-edgs
+					 Alias: prodtib3-eeob
+					 Alias: prodtib3-f
+					 Alias: prodtib3-g
+					 Alias: prodtib3-h
+					 Alias: prodtib3-i
+					 Alias: prodtib3-j
+					 Alias: prodtib3-k
+					 Alias: prodtib3-l
+					 Alias: prodtib3-m
+					 Alias: prodtib3-member_update
+					 Alias: prodtib3-membermatch
+					 Alias: prodtib3-n
+					 Alias: prodtib3-o
+					 Alias: prodtib3-p
+					 Alias: prodtib3-poigetdoc
+					 Alias: prodtib3-q
+					 Alias: prodtib3-r
+					 Alias: prodtib3-s
+					 Alias: prodtib3-t
+					 Alias: prodtib3-v
+					 Alias: prodtib3-x
+					 Alias: prodtib3_edms
+					 Alias: prodtib3b
+					 Alias: prodtib3c
+					 Alias: prodtib3d
+					 Alias: prodtib3f
+					 Alias: protib3-CFCMRosterServices
+					 Alias: protib3-CFHTCRosterServices
+					 Alias: protib3-CFPCMHAlertSvcs
+					 Alias: protib3-CFPCMHRosterSvcs
+					 Alias: protib3-CFPCPHAAlertSvcs
+					 Alias: protib3-CFPatternsRetListScvs
+					 Alias: protib3-CPHSpokes
+					 Alias: protib3-alias
+					 Alias: protib3-practitionerregist
+					 Alias: protib3-provprac
+					 Alias: protib3-view-auth
+					 Alias: protib3:10001
+					 Alias: protib3:10004
+					 Alias: protib3:10007
+					 Alias: protib3:10010
+					 Alias: protib3:10013
+					 Alias: protib3:10016
+					 Alias: protib3:10019
+					 Alias: protib3:10022
+					 Alias: protib3:12696
+					 Alias: protib3:12698
+					 Alias: protib3:9009
+					 Alias: protib3c
+					 Alias: protib3e
+					 Alias: providerpractitioner-3
+create node catalogdata-4 address 170.22.112.41%112
+					 Alias: cfbireport-4
+					 Alias: cferrorcodedescsvc2
+					 Alias: empfeaturemgmt-2
+					 Alias: employerauditsvc2
+					 Alias: empportaladmin2
+					 Alias: empselfregistration-2
+					 Alias: pretib4-alias
+					 Alias: prodtib4
+					 Alias: prodtib4-12633
+					 Alias: prodtib4-12642
+					 Alias: prodtib4-12646
+					 Alias: prodtib4-9311
+					 Alias: prodtib4-CFFileUploadSvcs
+					 Alias: prodtib4-CFRegionFilterSearch
+					 Alias: prodtib4-CPHSpokes
+					 Alias: prodtib4-CommunityBasedPrgmSrvs
+					 Alias: prodtib4-EmployerPortal
+					 Alias: prodtib4-ProvPracInfoVer
+					 Alias: prodtib4-UrgentCareSvcs
+					 Alias: prodtib4-alias
+					 Alias: prodtib4-cfprovinfoverp2i2
+					 Alias: prodtib4-e
+					 Alias: prodtib4-edgs
+					 Alias: prodtib4-eeob
+					 Alias: prodtib4-f
+					 Alias: prodtib4-g
+					 Alias: prodtib4-h
+					 Alias: prodtib4-i
+					 Alias: prodtib4-j
+					 Alias: prodtib4-k
+					 Alias: prodtib4-l
+					 Alias: prodtib4-m
+					 Alias: prodtib4-member_update
+					 Alias: prodtib4-membermatch
+					 Alias: prodtib4-n
+					 Alias: prodtib4-o
+					 Alias: prodtib4-p
+					 Alias: prodtib4-poigetdoc
+					 Alias: prodtib4-q
+					 Alias: prodtib4-r
+					 Alias: prodtib4-s
+					 Alias: prodtib4-t
+					 Alias: prodtib4-v
+					 Alias: prodtib4-x
+					 Alias: prodtib4_edms
+					 Alias: prodtib4b
+					 Alias: prodtib4c
+					 Alias: prodtib4d
+					 Alias: prodtib4e
+					 Alias: prodtib4f
+					 Alias: protib4-CFCMRosterServices
+					 Alias: protib4-CFHTCRosterServices
+					 Alias: protib4-CFPCMHAlertSvcs
+					 Alias: protib4-CFPCMHRosterSvcs
+					 Alias: protib4-CFPCPHAAlertSvcs
+					 Alias: protib4-CFPatternsRetListScvs
+					 Alias: protib4-alias
+					 Alias: protib4-practitionerregist
+					 Alias: protib4-provprac
+					 Alias: protib4-view-auth
+					 Alias: protib4:10001
+					 Alias: protib4:10004
+					 Alias: protib4:10007
+					 Alias: protib4:10010
+					 Alias: protib4:10013
+					 Alias: protib4:10016
+					 Alias: protib4:10019
+					 Alias: protib4:10022
+					 Alias: protib4:12696
+					 Alias: protib4:12698
+					 Alias: protib4:9009
+					 Alias: protib4c
+					 Alias: providerpractitioner-4
+create node hipawsp1 address 170.22.112.44%112
+					 Alias: hipawsp1_rmi
+					 Alias: hipwasp1-mds
+create node hipawsp2 address 170.22.112.45%112
+					 Alias: hipawsp2_rmi
+					 Alias: hipwasp2-mds
+create node memportalcarrierid1 address 170.22.112.66%112
+					 Alias: preauthcarrierid1
+create node memportalcarrierid2 address 170.22.112.67%112
+					 Alias: preauthcarrierid2
+create node npiprod1 address 170.22.112.46%112
+create node npiprod2 address 170.22.112.47%112
+create node prepny1 address 170.22.112.23%112
+create node prepny2 address 170.22.112.24%112
+create node prepny3 address 170.22.112.27%112
+create node prepny4 address 170.22.112.28%112
+create node pretib1 address 170.22.112.29%112
+					 Alias: pretib1-cfeaicgw
+create node pretib2 address 170.22.112.30%112
+					 Alias: pretib2-cfeaicgw
+create node preweb1 address 170.22.112.21%112
+					 Alias: preweb1-mds
+					 Alias: preweb1_rmi
+create node preweb2 address 170.22.112.22%112
+					 Alias: preweb2-mds
+					 Alias: preweb2_rmi
+create node preweb3 address 170.22.112.36%112
+					 Alias: preweb3-mds
+					 Alias: preweb3_rmi
+create node preweb4 address 170.22.112.37%112
+					 Alias: preweb4-mds
+					 Alias: preweb4_rmi
+create node prodtib1 address 170.22.112.31%112
+					 Alias: prodtib1-GenandStoreDoc
+					 Alias: prodtib1-MobileIDCard
+					 Alias: prodtib1-wellaccount
+					 Alias: prodtib1-wellexclusion
+					 Alias: prodtib1-wellproduct
+					 Alias: prodtib1:9588
+					 Alias: prodtib1_alias
+					 Alias: prodtib1_ebs-benefits
+					 Alias: prodtib1_eob-daily
+create node prodtib2 address 170.22.112.32%112
+					 Alias: prodtib2-GenandStoreDoc
+					 Alias: prodtib2-MobileIDCard
+					 Alias: prodtib2-wellaccount
+					 Alias: prodtib2-wellexclusion
+					 Alias: prodtib2-wellproduct
+					 Alias: prodtib2:9588
+					 Alias: prodtib2_alias
+					 Alias: prodtib2_ebs-benefits
+					 Alias: prodtib2_eob-daily
+create node upstream_downstream_core address 170.22.112.7%112
+
+		Existing Health Monitors
+
+create monitor tcp-half-open NAT_server_mon destination *:any
+create monitor tcp-half-open catalogdata_mon destination *:9781
+create monitor tcp-half-open catalogdata-3_mon destination *:9781
+create monitor tcp-half-open catalogdata-4_mon destination *:9781
+create monitor tcp-half-open cfbireport_mon destination *:9739
+create monitor tcp-half-open cfbireport-3_mon destination *:9739
+create monitor tcp-half-open cfbireport-4_mon destination *:9739
+create monitor tcp-half-open cferrorcodedescsvc_mon destination *:12658
+create monitor tcp-half-open empfeaturemgmt_mon destination *:12639
+create monitor tcp-half-open employerauditsvc_mon destination *:12649
+create monitor tcp-half-open empportaladminsvc_mon destination *:12687
+create monitor tcp-half-open empselfregistration_mon destination *:12645
+create monitor tcp-half-open hipawsp_mon destination *:9068
+create monitor tcp-half-open hipawsp1_rmi_mon destination *:1192
+create monitor tcp-half-open hipawsp2_rmi_mon destination *:1192
+create monitor tcp-half-open tcp destination *:any
+create monitor tcp-half-open memportalcarrierid_mon destination *:12641
+create monitor tcp-half-open npiprod_mon destination *:8084
+create monitor tcp-half-open preauthcarrierid_mon destination *:12644
+create monitor http gateway-icmp destination *.80
+create monitor tcp-half-open tibrealmedprod.carefirst.com_mon destination *:9411
+create monitor tcp-half-open cfeaicgwedix12toxml_mon destination *:any
+create monitor tcp-half-open pretib.carefirst.com_mon destination *:9509
+create monitor tcp-half-open pretib3/4_mon destination *:9760
+create monitor tcp-half-open FEMSConEligUMM_mon destination *:any
+create monitor tcp-half-open prewebrmi_1191_mon destination *:any
+create monitor tcp-half-open prewebrmi.carefirst.com_mon destination *:1192
+create monitor http preweb3_mon destination *.80
+create monitor http preweb4_mon destination *.80
+create monitor tcp-half-open prodtib.carefirst.com_mon destination *:9002
+create monitor tcp-half-open GenandStoreDoc_mon destination *:12614
+create monitor tcp-half-open MobileIDCardService_mon destination *:10601
+create monitor tcp-half-open well-account_mon destination *:12616
+create monitor tcp-half-open well-exclusion_mon destination *:12611
+create monitor tcp-half-open well-product_mon destination *:12610
+create monitor tcp-half-open prodtib9588.carefirst.com_mon destination *:any
+create monitor tcp-half-open MobileProviderService_mon destination *:any
+create monitor tcp-half-open CFNASCOEBSBenefits_mon destination *:10751
+create monitor tcp-half-open CFEOBDailyServices_mon destination *:10755
+create monitor tcp-half-open prodtib3_mon destination *:9311
+create monitor tcp-half-open AuthorizationEPASrvs_mon destination *:12633
+create monitor tcp-half-open CFPatternsSearchSvcs_mon destination *:12642
+create monitor tcp-half-open CFPanelMappingFilter_mon destination *:12646
+create monitor tcp-half-open prodtib3-9311_mon destination *:9311
+create monitor tcp-half-open CFFileUploadSvcs_mon destination *:12683
+create monitor tcp-half-open CFRegionFilterSearch_mon destination *:12646
+create monitor tcp-half-open CommunityBasedPrgmSrvs_mon destination *:12621
+create monitor tcp-half-open employer-portal_mon destination *:12629
+create monitor tcp-half-open cfpProvPracInfoVer_mon destination *:10752
+create monitor tcp-half-open UrgentCareSvcs_mon destination *:12631
+create monitor tcp-half-open cfprovinfoverify_mon destination *:any
+create monitor tcp-half-open cfprovinfoverp2i2_mon destination *:10753
+create monitor tcp-half-open prodtib3-e_mon destination *:9756
+create monitor tcp-half-open EDGS-service_mon destination *:10530
+create monitor tcp-half-open tibco-eeob_mon destination *:9841
+create monitor tcp-half-open prodtib3-f_mon destination *:9739
+create monitor tcp-half-open prodtib3-g_mon destination *:9740
+create monitor tcp-half-open prodtib3-h_mon destination *:9780
+create monitor tcp-half-open prodtib3-i_mon destination *:9781
+create monitor tcp-half-open prodtib3-j_mon destination *:10500
+create monitor tcp-half-open prodtib3-k_mon destination *:10501
+create monitor tcp-half-open prodtib3-l_mon destination *:10502
+create monitor tcp-half-open prodtib3-m_mon destination *:10503
+create monitor tcp-half-open member-update_mon destination *:9830
+create monitor tcp-half-open membermatch_mon destination *:9767
+create monitor tcp-half-open prodtib3-n_mon destination *:10504
+create monitor tcp-half-open prodtib3-o_mon destination *:10505
+create monitor tcp-half-open prodtib3-p_mon destination *:10506
+create monitor tcp-half-open poigetdoc_mon destination *:12619
+create monitor tcp-half-open prodtib3-q_mon destination *:10507
+create monitor tcp-half-open prodtib3-r_mon destination *:10508
+create monitor tcp-half-open prodtib3-s_mon destination *:10509
+create monitor tcp-half-open prodtib3-t_mon destination *:10510
+create monitor tcp-half-open entity-info_mon destination *:10528
+create monitor tcp-half-open broker-entity_mon destination *:10527
+create monitor tcp-half-open EDMSService_mon destination *:any
+create monitor tcp-half-open q2besales.carefirst.com_mon destination *:9416
+create monitor tcp-half-open tibco-protib_mon destination *:9724
+create monitor tcp-half-open prodtib3d_mon destination *:9756
+create monitor tcp-half-open protib3-4_eivr_icc_web_mon destination *:9872
+create monitor tcp-half-open prodtib4_mon destination *:9311
+create monitor tcp-half-open prodtib4-9311_mon destination *:9311
+create monitor tcp-half-open CPHSpokes_mon destination *:10575
+create monitor tcp-half-open prodtib4-e_mon destination *:9756
+create monitor tcp-half-open prodtib4-f_mon destination *:9739
+create monitor tcp-half-open prodtib4-g_mon destination *:9740
+create monitor tcp-half-open prodtib4-h_mon destination *:any
+create monitor tcp-half-open prodtib4-i_mon destination *:9781
+create monitor tcp-half-open prodtib4-j_mon destination *:10500
+create monitor tcp-half-open prodtib4-k_mon destination *:10501
+create monitor tcp-half-open prodtib4-l_mon destination *:10502
+create monitor tcp-half-open prodtib4-m_mon destination *:10503
+create monitor tcp-half-open prodtib4-n_mon destination *:10504
+create monitor tcp-half-open prodtib4-o_mon destination *:10505
+create monitor tcp-half-open prodtib4-p_mon destination *:10506
+create monitor tcp-half-open prodtib4-q_mon destination *:10507
+create monitor tcp-half-open prodtib4-r_mon destination *:10508
+create monitor tcp-half-open prodtib4-s_mon destination *:10509
+create monitor tcp-half-open prodtib4-t_mon destination *:10510
+create monitor tcp-half-open prodtib4c_mon destination *:9724
+create monitor tcp-half-open prodtib4d_mon destination *:9756
+create monitor tcp-half-open CFCMRosterServices_mon destination *:12675
+create monitor tcp-half-open CFHTCRosterServices_mon destination *:12763
+create monitor tcp-half-open CFPCMHAlertSvcs_mon destination *:12662
+create monitor tcp-half-open CFPCMHRosterSvcs_mon destination *:12660
+create monitor tcp-half-open CFPCPHAAlertSvcs_mon destination *:12679
+create monitor tcp-half-open CFPatternsRetListScvs_mon destination *:12677
+create monitor tcp-half-open workflowsvc3_mon destination *:any
+create monitor tcp-half-open practitionerregistration_mon destination *:9071
+create monitor tcp-half-open ProvPracSearch_mon destination *:10572
+create monitor tcp-half-open view-auth_mon destination *:10724
+create monitor tcp-half-open empbenefitdisplay_mon destination *:12696
+create monitor tcp-half-open empsalesforce_mon destination *:12698
+create monitor tcp-half-open prodtib3/4_mon destination *:9009
+create monitor tcp-half-open protib3c_mon destination *:9724
+create monitor tcp-half-open providerpractioner_mon destination *:9740
+create monitor tcp-half-open providerpractitioner-3_mon destination *:9740
+create monitor tcp-half-open providerpractitioner-4_mon destination *:9740
+
+		Custom traffic profiles
+
+create profile tcp ASUCallRoutingSvcs-tcp-profile idle-timeout 7
+create profile tcp ASUSupportSvcs-tcp-profile idle-timeout 7
+create profile tcp Auth-Ref-DataLookupSvcs-tcp-profile idle-timeout 7
+create profile tcp AuthorizationEPASrvs-tcp-profile idle-timeout 7
+create profile tcp BehavioralHealthServices-tcp-profile idle-timeout 7
+create profile tcp CFCMRosterServices-tcp-profile idle-timeout 7
+create profile tcp CFFileUploadSvcs-tcp-profile idle-timeout 7
+create profile tcp CFHTCRosterServices-tcp-profile idle-timeout 7
+create profile tcp CFPCMHAlertSvcs-tcp-profile idle-timeout 7
+create profile tcp CFPCMHRosterSvcs-tcp-profile idle-timeout 7
+create profile tcp CFPCPHAAlertSvcs-tcp-profile idle-timeout 7
+create profile tcp CFPanelMappingFilter-tcp-profile idle-timeout 7
+create profile tcp CFPatternsRetListScvs-tcp-profile idle-timeout 7
+create profile tcp CFPatternsSearchSvcs-tcp-profile idle-timeout 7
+create profile tcp CFPrintService-tcp-profile idle-timeout 7
+create profile tcp CFRegionFilterSearch-tcp-profile idle-timeout 7
+create profile tcp CPHSpokes-tcp-profile idle-timeout 7
+create profile tcp ClinicalPathwaysCatalog-tcp-profile idle-timeout 7
+create profile tcp ClinicalPathwaysSvcReqs-tcp-profile idle-timeout 7
+create profile tcp CommunityBasedPrgmSrvs-tcp-profile idle-timeout 7
+create profile tcp HomeHealthAssessment-tcp-profile idle-timeout 7
+create profile tcp MemberSearchSvcs-tcp-profile idle-timeout 7
+create profile tcp PartnerIntegration-2-tcp-profile idle-timeout 7
+create profile tcp ProvPracSearch-tcp-profile idle-timeout 7
+create profile tcp ProviderSearchSvcs-tcp-profile idle-timeout 7
+create profile tcp UrgentCareSvcs-tcp-profile idle-timeout 7
+create profile tcp careplansvc1-tcp-profile idle-timeout 7
+create profile tcp careplansvc2-tcp-profile idle-timeout 7
+create profile tcp careplansvc3-tcp-profile idle-timeout 7
+create profile tcp careplansvc4-tcp-profile idle-timeout 7
+create profile tcp catalogdata-tcp-profile idle-timeout 7
+create profile tcp cfbireport-tcp-profile idle-timeout 7
+create profile tcp cfeaipcmhreferralsvc-tcp-profile idle-timeout 7
+create profile tcp cfeaipcmhrosterconsentsvc-tcp-profile idle-timeout 7
+create profile tcp cferrorcodedescsvc-tcp-profile idle-timeout 7
+create profile tcp cfhtcquestionnaire-tcp-profile idle-timeout 7
+create profile tcp edms-doc-viewer-tcp-profile idle-timeout 3
+create profile tcp panelmappingsvc-tcp-profile idle-timeout 7
+create profile tcp panelmappingsvc2-tcp-profile idle-timeout 7
+create profile tcp poigetdoc-tcp-profile idle-timeout 7
+create profile tcp portico2-preweb-carefrist.com-tcp-profile idle-timeout 3
+create profile tcp prepny-carefirst.com-tcp-profile idle-timeout 5
+create profile tcp preweb-carefirst.com-tcp-profile idle-timeout 3
+create profile tcp prewebrmi.carefirst.com-tcp-profile idle-timeout 3
+create profile tcp prewebrmi_1191-tcp-profile idle-timeout 3
+create profile tcp prod-pica.carefrist.com-tcp-profile idle-timeout 225
+create profile tcp qualitymeasuresvc-tcp-profile idle-timeout 7
+create profile tcp tibpcmhp-9780-tcp-profile idle-timeout 7
+create profile tcp view-auth-tcp-profile idle-timeout 7
+create profile tcp workflowsvc1-tcp-profile idle-timeout 7
+create profile tcp workflowsvc2-tcp-profile idle-timeout 7
+create profile tcp workflowsvc3-tcp-profile idle-timeout 7
+create profile tcp workflowsvc4-tcp-profile idle-timeout 7
+
+		Existing Pools
+
+create pool ASUCallRoutingSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:10566  catalogdata-4:10566  } monitor ASUCallRoutingSvcs_mon
+create pool ASUSupportSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:10568  catalogdata-4:10568  } monitor ASUSupportSvcs_mon
+create pool Auth-Ref-DataLookupSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:10569  catalogdata-4:10569  } monitor Auth-Ref-DataLookupSvcs_mon
+create pool AuthorizationEPASrvs_pool load-balancing-mode round-robin members add {  catalogdata-3:12633  catalogdata-4:12633  } monitor AuthorizationEPASrvs_mon
+create pool BIReports-EGR_pool load-balancing-mode round-robin members add {  catalogdata-3:9639  catalogdata-4:9639  } monitor BIReports-EGR_mon
+create pool BehavioralHealthServices_pool load-balancing-mode round-robin members add {  catalogdata-3:10565  catalogdata-4:10565  } monitor BehavioralHealthServices_mon
+create pool CFCFABlueExchange_pool load-balancing-mode round-robin members add {  prodtib1:10595  prodtib2:10595  } monitor CFCFABlueExchange_mon
+create pool CFCMRosterServices_pool load-balancing-mode round-robin members add {  catalogdata-3:12675  catalogdata-4:12675  } monitor CFCMRosterServices_mon
+create pool CFEAIEmailCommCompSvcs_pool load-balancing-mode round-robin members add {  catalogdata-4:9759  catalogdata-3:9759  } monitor CFEAIEmailCommCompSvcs_mon
+create pool CFEHealthyBlueIncentive_pool load-balancing-mode round-robin members add {  prodtib1:9719  prodtib2:9719  } monitor CFEHealthyBlueIncentive_mon
+create pool CFEOBDailyServices_pool load-balancing-mode round-robin members add {  prodtib1:10755  prodtib2:10755  } monitor CFEOBDailyServices_mon
+create pool CFFileUploadSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:12683  catalogdata-4:12683  } monitor CFFileUploadSvcs_mon
+create pool CFHTCRosterServices_pool load-balancing-mode round-robin members add {  catalogdata-3:12763  catalogdata-4:12763  } monitor CFHTCRosterServices_mon
+create pool CFNASCOEBSBenefits_pool load-balancing-mode round-robin members add {  prodtib1:10751  prodtib2:10751  } monitor CFNASCOEBSBenefits_mon
+create pool CFPCMHAlertSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:12662  catalogdata-4:12662  } monitor CFPCMHAlertSvcs_mon
+create pool CFPCMHRosterSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:12660  catalogdata-4:12660  } monitor CFPCMHRosterSvcs_mon
+create pool CFPCPHAAlertSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:12679  catalogdata-4:12679  } monitor CFPCPHAAlertSvcs_mon
+create pool CFPanelMappingFilter_pool load-balancing-mode round-robin members add {  catalogdata-3:12646  catalogdata-4:12646  } monitor CFPanelMappingFilter_mon
+create pool CFPatternsRetListScvs_pool load-balancing-mode round-robin members add {  catalogdata-3:12677  catalogdata-4:12677  } monitor CFPatternsRetListScvs_mon
+create pool CFPatternsSearchSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:12642  catalogdata-4:12642  } monitor CFPatternsSearchSvcs_mon
+create pool CFPrintService_pool load-balancing-mode round-robin members add {  catalogdata-3:10567  catalogdata-4:10567  } monitor CFPrintService_mon
+create pool CFRegionFilterSearch_pool load-balancing-mode round-robin members add {  catalogdata-3:12646  catalogdata-4:12646  } monitor CFRegionFilterSearch_mon
+create pool CPHSpokes_pool load-balancing-mode round-robin members add {  catalogdata-4:10575  catalogdata-3:10575  } monitor CPHSpokes_mon
+create pool ClinicalPathwaysCatalog_pool load-balancing-mode round-robin members add {  catalogdata-3:10573  catalogdata-4:10573  } monitor ClinicalPathwaysCatalog_mon
+create pool ClinicalPathwaysSvcReqs_pool load-balancing-mode round-robin members add {  catalogdata-3:10574  catalogdata-4:10574  } monitor ClinicalPathwaysSvcReqs_mon
+create pool CommunityBasedPrgmSrvs_pool load-balancing-mode round-robin members add {  catalogdata-3:12621  catalogdata-4:12621  } monitor CommunityBasedPrgmSrvs_mon
+create pool EDGS-service_pool load-balancing-mode round-robin members add {  catalogdata-3:10530  catalogdata-4:10530  } monitor EDGS-service_mon
+create pool EDMSService_pool load-balancing-mode round-robin members add {  catalogdata-3:8001  catalogdata-4:8001  } monitor EDMSService_mon
+create pool FEMSConEligUMM_pool load-balancing-mode round-robin members add {  catalogdata-4:10002  catalogdata-3:10002  } monitor FEMSConEligUMM_mon
+create pool GenandStoreDoc_pool load-balancing-mode round-robin members add {  prodtib1:12614  prodtib2:12614  } monitor GenandStoreDoc_mon
+create pool HomeHealthAssessment_pool load-balancing-mode round-robin members add {  catalogdata-3:10563  catalogdata-4:10563  } monitor HomeHealthAssessment_mon
+create pool MemberSearchSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:10571  catalogdata-4:10571  } monitor MemberSearchSvcs_mon
+create pool MobileIDCardService_pool load-balancing-mode round-robin members add {  prodtib1:10601  prodtib2:10601  } monitor MobileIDCardService_mon
+create pool MobileProviderService_pool load-balancing-mode round-robin members add {  prodtib1:10604  prodtib2:10604  } monitor MobileProviderService_mon
+create pool PartnerIntegration-2_pool load-balancing-mode round-robin members add {  catalogdata-3:10564  catalogdata-4:10564  } monitor PartnerIntegration-2_mon
+create pool ProvPracSearch_pool load-balancing-mode round-robin members add {  catalogdata-3:10572  catalogdata-4:10572  } monitor ProvPracSearch_mon
+create pool ProviderSearchSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:10570  catalogdata-4:10570  } monitor ProviderSearchSvcs_mon
+create pool UrgentCareSvcs_pool load-balancing-mode round-robin members add {  catalogdata-3:12631  catalogdata-4:12631  } monitor UrgentCareSvcs_mon
+create pool broker-entity_pool load-balancing-mode round-robin members add {  catalogdata-3:10527  catalogdata-4:10527  } monitor broker-entity_mon
+create pool careplansvc0_pool load-balancing-mode round-robin members add {  catalogdata-3:10500  catalogdata-4:10500  } monitor careplansvc0_mon
+create pool careplansvc1_pool load-balancing-mode round-robin members add {  catalogdata-3:10501  catalogdata-4:10501  } monitor careplansvc1_mon
+create pool careplansvc2_pool load-balancing-mode round-robin members add {  catalogdata-3:10502  catalogdata-4:10502  } monitor careplansvc2_mon
+create pool careplansvc3_pool load-balancing-mode round-robin members add {  catalogdata-3:10503  catalogdata-4:10503  } monitor careplansvc3_mon
+create pool careplansvc4_pool load-balancing-mode round-robin members add {  catalogdata-3:10504  catalogdata-4:10504  } monitor careplansvc4_mon
+create pool catalogdata_pool load-balancing-mode round-robin members add {  catalogdata-1:9781  catalogdata-2:9781  catalogdata-3:9781  catalogdata-4:9781  } monitor catalogdata_mon
+create pool cfbireport_pool load-balancing-mode round-robin members add {  catalogdata-1:9739  catalogdata-2:9739  catalogdata-3:9739  catalogdata-4:9739  } monitor cfbireport_mon
+create pool cfeaicgwedix12toxml_pool load-balancing-mode round-robin members add {  pretib1:9920  pretib2:9920  } monitor cfeaicgwedix12toxml_mon
+create pool cfeaipcmhcasemgmtsvc_pool load-balancing-mode round-robin members add {  catalogdata-3:9757  catalogdata-4:9757  } monitor cfeaipcmhcasemgmtsvc_mon
+create pool cfeaipcmhreferralsvc_pool load-balancing-mode round-robin members add {  catalogdata-3:9758  catalogdata-4:9758  } monitor cfeaipcmhreferralsvc_mon
+create pool cfeaipcmhrosterconsentsvc_pool load-balancing-mode round-robin members add {  catalogdata-3:9755  catalogdata-4:9755  } monitor cfeaipcmhrosterconsentsvc_mon
+create pool cferrorcodedescsvc_pool load-balancing-mode round-robin members add {  catalogdata-3:12658  catalogdata-4:12658  } monitor cferrorcodedescsvc_mon
+create pool cfhtcquestionnaire_pool load-balancing-mode round-robin members add {  catalogdata-3:10562  catalogdata-4:10562  } monitor cfhtcquestionnaire_mon
+create pool cfpProvPracInfoVer_pool load-balancing-mode round-robin members add {  catalogdata-3:10752  catalogdata-4:10752  } monitor cfpProvPracInfoVer_mon
+create pool cfprovinfoverify_pool load-balancing-mode round-robin members add {  catalogdata-3:10594  catalogdata-4:10594  } monitor cfprovinfoverify_mon
+create pool cfprovinfoverp2i2_pool load-balancing-mode round-robin members add {  catalogdata-3:10753  catalogdata-4:10753  } monitor cfprovinfoverp2i2_mon
+create pool edms-doc-viewer_pool load-balancing-mode round-robin members add {  preweb3:9243  preweb4:9243  } monitor edms-doc-viewer_mon
+create pool empbenefitdisplay_pool load-balancing-mode round-robin members add {  catalogdata-3:12696  catalogdata-4:12696  } monitor empbenefitdisplay_mon
+create pool empfeaturemgmt_pool load-balancing-mode round-robin members add {  catalogdata-3:12639  catalogdata-4:12639  } monitor empfeaturemgmt_mon
+create pool employer-portal_pool load-balancing-mode round-robin members add {  catalogdata-3:12629  catalogdata-4:12629  } monitor employer-portal_mon
+create pool employerauditsvc_pool load-balancing-mode round-robin members add {  catalogdata-3:12649  catalogdata-4:12649  } monitor employerauditsvc_mon
+create pool empportaladminsvc_pool load-balancing-mode round-robin members add {  catalogdata-3:12687  catalogdata-4:12687  } monitor empportaladminsvc_mon
+create pool empsalesforce_pool load-balancing-mode round-robin members add {  catalogdata-3:12698  catalogdata-4:12698  } monitor empsalesforce_mon
+create pool empselfregistration_pool load-balancing-mode round-robin members add {  catalogdata-3:12645  catalogdata-4:12645  } monitor empselfregistration_mon
+create pool entity-info_pool load-balancing-mode round-robin members add {  catalogdata-3:10528  catalogdata-4:10528  } monitor entity-info_mon
+create pool hipawsp_pool load-balancing-mode round-robin members add {  hipawsp1:any  hipawsp2:any  } monitor hipawsp_mon
+create pool member-update_pool load-balancing-mode round-robin members add {  catalogdata-3:9830  catalogdata-4:9830  } monitor member-update_mon
+create pool membermatch_pool load-balancing-mode round-robin members add {  catalogdata-4:9767  catalogdata-3:9767  } monitor membermatch_mon
+create pool memportalcarrierid_pool load-balancing-mode round-robin members add {  memportalcarrierid1:12641  memportalcarrierid2:12641  } monitor memportalcarrierid_mon
+create pool npiprod_pool load-balancing-mode round-robin members add {  npiprod1:any  npiprod2:any  } monitor npiprod_mon
+create pool panelmappingsvc_pool load-balancing-mode round-robin members add {  catalogdata-3:10509  catalogdata-4:10509  } monitor panelmappingsvc_mon
+create pool panelmappingsvc2_pool load-balancing-mode round-robin members add {  catalogdata-3:10510  catalogdata-4:10510  } monitor panelmappingsvc2_mon
+create pool poigetdoc_pool load-balancing-mode round-robin members add {  catalogdata-3:12619  catalogdata-4:12619  } monitor poigetdoc_mon
+create pool portico2-preweb-carefrist.com_pool load-balancing-mode round-robin members add {  preweb1:any  preweb2:any  } monitor gateway-icmp
+create pool practitionerregistration_pool load-balancing-mode round-robin members add {  catalogdata-3:9071  catalogdata-4:9071  } monitor practitionerregistration_mon
+create pool preauthcarrierid_pool load-balancing-mode round-robin members add {  memportalcarrierid1:12644  memportalcarrierid2:12644  } monitor preauthcarrierid_mon
+create pool prepny-carefirst.com_pool load-balancing-mode round-robin members add {  prepny1:any  prepny2:any  prepny3:any  prepny4:any  } monitor gateway-icmp
+create pool pretib.carefirst.com_pool load-balancing-mode round-robin members add {  catalogdata-1:any  catalogdata-2:any  } monitor pretib.carefirst.com_mon
+create pool pretib3/4_pool load-balancing-mode round-robin members add {  catalogdata-1:any  catalogdata-2:any  } monitor pretib3/4_mon
+create pool preweb-carefirst.com_pool load-balancing-mode round-robin members add {  preweb1:any  preweb2:any  } monitor gateway-icmp
+create pool preweb-mds_pool load-balancing-mode round-robin members add {  preweb1:1191  preweb2:1191  preweb3:1191  preweb4:1191  } monitor preweb-mds_mon
+create pool prewebrmi.carefirst.com_pool load-balancing-mode round-robin members add {  preweb1:any  preweb2:any  preweb3:any  preweb4:any  } monitor prewebrmi.carefirst.com_mon
+create pool prewebrmi_1191_pool load-balancing-mode round-robin members add {  preweb1:1191  preweb2:1191  preweb3:1191  preweb4:1191  } monitor prewebrmi_1191_mon
+create pool prod-pica.carefrist.com_pool load-balancing-mode round-robin members add {  preweb1:any  preweb2:any  } monitor gateway-icmp
+create pool prodtib.carefirst.com_pool load-balancing-mode round-robin members add {  prodtib1:any  prodtib2:any  } monitor prodtib.carefirst.com_mon
+create pool prodtib3_pool load-balancing-mode round-robin members add {  catalogdata-3:any  catalogdata-3:any  catalogdata-3:any  catalogdata-3:any  catalogdata-3:any  catalogdata-3:any  catalogdata-3:any  catalogdata-3:any  catalogdata-4:any  catalogdata-4:any  catalogdata-4:any  catalogdata-4:any  catalogdata-4:any  catalogdata-4:any  catalogdata-4:any  catalogdata-4:any  } monitor prodtib3_mon
+create pool prodtib3/4_pool load-balancing-mode round-robin members add {  catalogdata-3:any  catalogdata-4:any  } monitor prodtib3/4_mon
+create pool prodtib9588.carefirst.com_pool load-balancing-mode round-robin members add {  prodtib1:9588  prodtib2:9588  } monitor prodtib9588.carefirst.com_mon
+create pool protib3-4_eivr_icc_web_pool load-balancing-mode round-robin members add {  catalogdata-3:any  catalogdata-4:any  catalogdata-3:any  catalogdata-4:any  } monitor protib3-4_eivr_icc_web_mon
+create pool providerpractioner_pool load-balancing-mode round-robin members add {  catalogdata-1:9740  catalogdata-2:9740  catalogdata-3:9740  catalogdata-4:9740  } monitor providerpractioner_mon
+create pool q2besales.carefirst.com_pool load-balancing-mode round-robin members add {  catalogdata-3:any  catalogdata-4:any  } monitor q2besales.carefirst.com_mon
+create pool qualitymeasuresvc_pool load-balancing-mode round-robin members add {  catalogdata-3:10561  catalogdata-4:10561  } monitor qualitymeasuresvc_mon
+create pool tibco-eeob_pool load-balancing-mode round-robin members add {  catalogdata-3:9841  catalogdata-4:9841  } monitor tibco-eeob_mon
+create pool tibco-protib_pool load-balancing-mode round-robin members add {  catalogdata-3:any  catalogdata-4:any  } monitor tibco-protib_mon
+create pool tibpcmh-9756_pool load-balancing-mode round-robin members add {  catalogdata-3:9756  catalogdata-4:9756  } monitor tibpcmh-9756_mon
+create pool tibpcmhp-9780_pool load-balancing-mode round-robin members add {  catalogdata-3:9780  catalogdata-4:9780  } monitor tibpcmhp-9780_mon
+create pool tibrealmedprod.carefirst.com_pool load-balancing-mode round-robin members add {  pretib1:any  pretib2:any  } monitor tibrealmedprod.carefirst.com_mon
+create pool tibtv-claimsaudit_pool load-balancing-mode round-robin members add {  catalogdata-3:9877  catalogdata-4:9877  } monitor tibtv-claimsaudit_mon
+create pool tibtv-claimsdata_pool load-balancing-mode round-robin members add {  catalogdata-3:9875  catalogdata-4:9875  } monitor tibtv-claimsdata_mon
+create pool tibtv-claimssearch_pool load-balancing-mode round-robin members add {  catalogdata-3:9876  catalogdata-4:9876  } monitor tibtv-claimssearch_mon
+create pool tibtv-ppeerrorreport_pool load-balancing-mode round-robin members add {  catalogdata-3:9878  catalogdata-4:9878  } monitor tibtv-ppeerrorreport_mon
+create pool view-auth_pool load-balancing-mode round-robin members add {  catalogdata-3:10724  catalogdata-4:10724  } monitor view-auth_mon
+create pool webconnect_pool load-balancing-mode round-robin members add {  catalogdata-3:9842  catalogdata-4:9842  } monitor webconnect_mon
+create pool well-account_pool load-balancing-mode round-robin members add {  prodtib1:12616  prodtib2:12616  } monitor well-account_mon
+create pool well-exclusion_pool load-balancing-mode round-robin members add {  prodtib1:12611  prodtib2:12611  } monitor well-exclusion_mon
+create pool well-product_pool load-balancing-mode round-robin members add {  prodtib1:12610  prodtib2:12610  } monitor well-product_mon
+create pool workflowsvc1_pool load-balancing-mode round-robin members add {  catalogdata-3:10505  catalogdata-4:10505  } monitor workflowsvc1_mon
+create pool workflowsvc2_pool load-balancing-mode round-robin members add {  catalogdata-3:10506  catalogdata-4:10506  } monitor workflowsvc2_mon
+create pool workflowsvc3_pool load-balancing-mode round-robin members add {  catalogdata-3:10507  catalogdata-4:10507  } monitor workflowsvc3_mon
+create pool workflowsvc4_pool load-balancing-mode round-robin members add {  catalogdata-3:10508  catalogdata-4:10508  } monitor workflowsvc3_mon
+
+		Existing Site Summary:
+
+create virtual ASUCallRoutingSvcs { destination 170.22.112.52%112:10566 profiles add { tcp ASUCallRoutingSvcs-tcp-profile } source-address-translation { type automap }  pool ASUCallRoutingSvcs_pool }
+
+create virtual ASUSupportSvcs { destination 170.22.112.52%112:10568 profiles add { tcp ASUSupportSvcs-tcp-profile } source-address-translation { type automap }  pool ASUSupportSvcs_pool }
+
+create virtual Auth-Ref-DataLookupSvcs { destination 170.22.112.52%112:10569 profiles add { tcp Auth-Ref-DataLookupSvcs-tcp-profile } source-address-translation { type automap }  pool Auth-Ref-DataLookupSvcs_pool }
+
+create virtual AuthorizationEPASrvs { destination 170.22.112.52%112:12633 profiles add { tcp AuthorizationEPASrvs-tcp-profile } source-address-translation { type automap }  pool AuthorizationEPASrvs_pool }
+
+create virtual BIReports-EGR { destination 170.22.112.52%112:9639 profiles add { tcp } source-address-translation { type automap }  pool BIReports-EGR_pool }
+
+create virtual BehavioralHealthServices { destination 170.22.112.52%112:10565 profiles add { tcp BehavioralHealthServices-tcp-profile } source-address-translation { type automap }  pool BehavioralHealthServices_pool }
+
+create virtual CFCFABlueExchange { destination 170.22.112.70%112:10595 profiles add { tcp } source-address-translation { type automap }  pool CFCFABlueExchange_pool }
+
+create virtual CFCMRosterServices { destination 170.22.112.52%112:12675 profiles add { tcp CFCMRosterServices-tcp-profile } source-address-translation { type automap }  pool CFCMRosterServices_pool }
+
+create virtual CFEAIEmailCommCompSvcs { destination 170.22.112.102%112:9759 profiles add { tcp } source-address-translation { type automap }  pool CFEAIEmailCommCompSvcs_pool }
+
+create virtual CFEHealthyBlueIncentive { destination 170.22.112.130%112:9719 profiles add { tcp } source-address-translation { type automap }  pool CFEHealthyBlueIncentive_pool }
+
+create virtual CFEOBDailyServices { destination 170.22.112.140%112:10755 profiles add { tcp } source-address-translation { type automap }  pool CFEOBDailyServices_pool }
+
+create virtual CFFileUploadSvcs { destination 170.22.112.52%112:12683 profiles add { tcp CFFileUploadSvcs-tcp-profile } source-address-translation { type automap }  pool CFFileUploadSvcs_pool }
+
+create virtual CFHTCRosterServices { destination 170.22.112.52%112:12763 profiles add { tcp CFHTCRosterServices-tcp-profile } source-address-translation { type automap }  pool CFHTCRosterServices_pool }
+
+create virtual CFNASCOEBSBenefits { destination 170.22.112.139%112:10751 profiles add { tcp } source-address-translation { type automap }  pool CFNASCOEBSBenefits_pool }
+
+create virtual CFPCMHAlertSvcs { destination 170.22.112.52%112:12662 profiles add { tcp CFPCMHAlertSvcs-tcp-profile } source-address-translation { type automap }  pool CFPCMHAlertSvcs_pool }
+
+create virtual CFPCMHRosterSvcs { destination 170.22.112.52%112:12660 profiles add { tcp CFPCMHRosterSvcs-tcp-profile } source-address-translation { type automap }  pool CFPCMHRosterSvcs_pool }
+
+create virtual CFPCPHAAlertSvcs { destination 170.22.112.52%112:12679 profiles add { tcp CFPCPHAAlertSvcs-tcp-profile } source-address-translation { type automap }  pool CFPCPHAAlertSvcs_pool }
+
+create virtual CFPanelMappingFilter { destination 170.22.112.52%112:12646 profiles add { tcp CFPanelMappingFilter-tcp-profile } source-address-translation { type automap }  pool CFPanelMappingFilter_pool }
+
+create virtual CFPatternsRetListScvs { destination 170.22.112.52%112:12677 profiles add { tcp CFPatternsRetListScvs-tcp-profile } source-address-translation { type automap }  pool CFPatternsRetListScvs_pool }
+
+create virtual CFPatternsSearchSvcs { destination 170.22.112.52%112:12642 profiles add { tcp CFPatternsSearchSvcs-tcp-profile } source-address-translation { type automap }  pool CFPatternsSearchSvcs_pool }
+
+create virtual CFPrintService { destination 170.22.112.52%112:10567 profiles add { tcp CFPrintService-tcp-profile } source-address-translation { type automap }  pool CFPrintService_pool }
+
+create virtual CFRegionFilterSearch { destination 170.22.112.52%112:12646 profiles add { tcp CFRegionFilterSearch-tcp-profile } source-address-translation { type automap }  pool CFRegionFilterSearch_pool }
+
+create virtual CPHSpokes { destination 170.22.112.52%112:10575 profiles add { tcp CPHSpokes-tcp-profile } source-address-translation { type automap }  pool CPHSpokes_pool }
+
+create virtual ClinicalPathwaysCatalog { destination 170.22.112.52%112:10573 profiles add { tcp ClinicalPathwaysCatalog-tcp-profile } source-address-translation { type automap }  pool ClinicalPathwaysCatalog_pool }
+
+create virtual ClinicalPathwaysSvcReqs { destination 170.22.112.52%112:10574 profiles add { tcp ClinicalPathwaysSvcReqs-tcp-profile } source-address-translation { type automap }  pool ClinicalPathwaysSvcReqs_pool }
+
+create virtual CommunityBasedPrgmSrvs { destination 170.22.112.52%112:12621 profiles add { tcp CommunityBasedPrgmSrvs-tcp-profile } source-address-translation { type automap }  pool CommunityBasedPrgmSrvs_pool }
+
+create virtual EDGS-service { destination 170.22.112.115%112:10530 profiles add { tcp } source-address-translation { type automap }  pool EDGS-service_pool }
+
+create virtual EDMSService { destination 170.22.112.53%112:8001 profiles add { tcp } source-address-translation { type automap }  pool EDMSService_pool }
+
+create virtual FEMSConEligUMM { destination 170.22.112.103%112:10002 profiles add { tcp } source-address-translation { type automap }  pool FEMSConEligUMM_pool }
+
+create virtual GenandStoreDoc { destination 170.22.112.131%112:12614 profiles add { tcp } source-address-translation { type automap }  pool GenandStoreDoc_pool }
+
+create virtual HomeHealthAssessment { destination 170.22.112.52%112:10563 profiles add { tcp HomeHealthAssessment-tcp-profile } source-address-translation { type automap }  pool HomeHealthAssessment_pool }
+
+create virtual MemberSearchSvcs { destination 170.22.112.52%112:10571 profiles add { tcp MemberSearchSvcs-tcp-profile } source-address-translation { type automap }  pool MemberSearchSvcs_pool }
+
+create virtual MobileIDCardService { destination 170.22.112.73%112:10601 profiles add { tcp } source-address-translation { type automap }  pool MobileIDCardService_pool }
+
+create virtual MobileProviderService { destination 170.22.112.73%112:10604 profiles add { tcp } source-address-translation { type automap }  pool MobileProviderService_pool }
+
+create virtual PartnerIntegration-2 { destination 170.22.112.52%112:10564 profiles add { tcp PartnerIntegration-2-tcp-profile } source-address-translation { type automap }  pool PartnerIntegration-2_pool }
+
+create virtual ProvPracSearch { destination 170.22.112.52%112:10572 profiles add { tcp ProvPracSearch-tcp-profile } source-address-translation { type automap }  pool ProvPracSearch_pool }
+
+create virtual ProviderSearchSvcs { destination 170.22.112.52%112:10570 profiles add { tcp ProviderSearchSvcs-tcp-profile } source-address-translation { type automap }  pool ProviderSearchSvcs_pool }
+
+create virtual UrgentCareSvcs { destination 170.22.112.52%112:12631 profiles add { tcp UrgentCareSvcs-tcp-profile } source-address-translation { type automap }  pool UrgentCareSvcs_pool }
+
+create virtual broker-entity { destination 170.22.112.102%112:10527 profiles add { tcp } source-address-translation { type automap }  pool broker-entity_pool }
+
+create virtual careplansvc0 { destination 170.22.112.52%112:10500 profiles add { tcp } source-address-translation { type automap }  pool careplansvc0_pool }
+
+create virtual careplansvc1 { destination 170.22.112.52%112:10501 profiles add { tcp careplansvc1-tcp-profile } source-address-translation { type automap }  pool careplansvc1_pool }
+
+create virtual careplansvc2 { destination 170.22.112.52%112:10502 profiles add { tcp careplansvc2-tcp-profile } source-address-translation { type automap }  pool careplansvc2_pool }
+
+create virtual careplansvc3 { destination 170.22.112.52%112:10503 profiles add { tcp careplansvc3-tcp-profile } source-address-translation { type automap }  pool careplansvc3_pool }
+
+create virtual careplansvc4 { destination 170.22.112.52%112:10504 profiles add { tcp careplansvc4-tcp-profile } source-address-translation { type automap }  pool careplansvc4_pool }
+
+create virtual catalogdata { destination 170.22.112.52%112:9781 profiles add { tcp catalogdata-tcp-profile } source-address-translation { type automap }  pool catalogdata_pool }
+
+create virtual cfbireport { destination 170.22.112.52%112:9739 profiles add { tcp cfbireport-tcp-profile } source-address-translation { type automap }  pool cfbireport_pool }
+
+create virtual cfeaicgwedix12toxml { destination 170.22.112.114%112:9920 profiles add { tcp } source-address-translation { type automap }  pool cfeaicgwedix12toxml_pool }
+
+create virtual cfeaipcmhcasemgmtsvc { destination 170.22.112.52%112:9757 profiles add { tcp } source-address-translation { type automap }  pool cfeaipcmhcasemgmtsvc_pool }
+
+create virtual cfeaipcmhreferralsvc { destination 170.22.112.52%112:9758 profiles add { tcp cfeaipcmhreferralsvc-tcp-profile } source-address-translation { type automap }  pool cfeaipcmhreferralsvc_pool }
+
+create virtual cfeaipcmhrosterconsentsvc { destination 170.22.112.52%112:9755 profiles add { tcp cfeaipcmhrosterconsentsvc-tcp-profile } source-address-translation { type automap }  pool cfeaipcmhrosterconsentsvc_pool }
+
+create virtual cferrorcodedescsvc { destination 170.22.112.143%112:12658 profiles add { tcp cferrorcodedescsvc-tcp-profile } source-address-translation { type automap }  pool cferrorcodedescsvc_pool }
+
+create virtual cfhtcquestionnaire { destination 170.22.112.52%112:10562 profiles add { tcp cfhtcquestionnaire-tcp-profile } source-address-translation { type automap }  pool cfhtcquestionnaire_pool }
+
+create virtual cfpProvPracInfoVer { destination 170.22.112.117%112:10752 profiles add { tcp } source-address-translation { type automap }  pool cfpProvPracInfoVer_pool }
+
+create virtual cfprovinfoverify { destination 170.22.112.117%112:10594 profiles add { tcp } source-address-translation { type automap }  pool cfprovinfoverify_pool }
+
+create virtual cfprovinfoverp2i2 { destination 170.22.112.117%112:10753 profiles add { tcp } source-address-translation { type automap }  pool cfprovinfoverp2i2_pool }
+
+create virtual edms-doc-viewer { destination 170.22.112.64%112:9243 profiles add { tcp edms-doc-viewer-tcp-profile } source-address-translation { type automap }  pool edms-doc-viewer_pool }
+
+create virtual empbenefitdisplay { destination 170.22.112.102%112:12696 profiles add { tcp } source-address-translation { type automap }  pool empbenefitdisplay_pool }
+
+create virtual empfeaturemgmt { destination 170.22.112.102%112:12639 profiles add { tcp } source-address-translation { type automap }  pool empfeaturemgmt_pool }
+
+create virtual employer-portal { destination 170.22.112.102%112:12629 profiles add { tcp } source-address-translation { type automap }  pool employer-portal_pool }
+
+create virtual employerauditsvc { destination 170.22.112.102%112:12649 profiles add { tcp } source-address-translation { type automap }  pool employerauditsvc_pool }
+
+create virtual empportaladminsvc { destination 170.22.112.102%112:12687 profiles add { tcp } source-address-translation { type automap }  pool empportaladminsvc_pool }
+
+create virtual empsalesforce { destination 170.22.112.102%112:12698 profiles add { tcp } source-address-translation { type automap }  pool empsalesforce_pool }
+
+create virtual empselfregistration { destination 170.22.112.102%112:12645 profiles add { tcp } source-address-translation { type automap }  pool empselfregistration_pool }
+
+create virtual entity-info { destination 170.22.112.102%112:10528 profiles add { tcp } source-address-translation { type automap }  pool entity-info_pool }
+
+create virtual hipawsp { destination 170.22.112.43%112:any profiles add { tcp } source-address-translation { type automap }  pool hipawsp_pool }
+
+create virtual member-update { destination 170.22.112.144%112:9830 profiles add { tcp } source-address-translation { type automap }  pool member-update_pool }
+
+create virtual membermatch { destination 170.22.112.102%112:9767 profiles add { tcp } source-address-translation { type automap }  pool membermatch_pool }
+
+create virtual memportalcarrierid { destination 170.22.112.68%112:12641 profiles add { tcp } source-address-translation { type automap }  pool memportalcarrierid_pool }
+
+create virtual npiprod { destination 170.22.112.48%112:any profiles add { tcp } source-address-translation { type automap }  pool npiprod_pool }
+
+create virtual panelmappingsvc { destination 170.22.112.52%112:10509 profiles add { tcp panelmappingsvc-tcp-profile } source-address-translation { type automap }  pool panelmappingsvc_pool }
+
+create virtual panelmappingsvc2 { destination 170.22.112.52%112:10510 profiles add { tcp panelmappingsvc2-tcp-profile } source-address-translation { type automap }  pool panelmappingsvc2_pool }
+
+create virtual poigetdoc { destination 170.22.112.142%112:12619 profiles add { tcp poigetdoc-tcp-profile } source-address-translation { type automap }  pool poigetdoc_pool }
+
+create virtual portico2-preweb-carefrist.com { destination 170.22.112.84%112:any profiles add { tcp portico2-preweb-carefrist.com-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool portico2-preweb-carefrist.com_pool }
+
+create virtual practitionerregistration { destination 170.22.112.91%112:9071 profiles add { tcp } source-address-translation { type automap }  pool practitionerregistration_pool }
+
+create virtual preauthcarrierid { destination 170.22.112.68%112:12644 profiles add { tcp } source-address-translation { type automap }  pool preauthcarrierid_pool }
+
+create virtual prepny-carefirst.com { destination 170.22.112.82%112:any profiles add { tcp prepny-carefirst.com-tcp-profile } source-address-translation { type automap }  pool prepny-carefirst.com_pool }
+
+create virtual pretib.carefirst.com { destination 170.22.112.50%112:any profiles add { tcp } source-address-translation { type automap }  pool pretib.carefirst.com_pool }
+
+create virtual pretib3/4 { destination 170.22.112.102%112:any profiles add { tcp } source-address-translation { type automap }  pool pretib3/4_pool }
+
+create virtual preweb-carefirst.com { destination 170.22.112.81%112:any profiles add { tcp preweb-carefirst.com-tcp-profile } source-address-translation { type automap }  pool preweb-carefirst.com_pool }
+
+create virtual preweb-mds { destination 170.22.112.108%112:1191 profiles add { tcp } source-address-translation { type automap }  pool preweb-mds_pool }
+
+create virtual prewebrmi.carefirst.com { destination 170.22.112.20%112:any profiles add { tcp prewebrmi.carefirst.com-tcp-profile } source-address-translation { type automap }  pool prewebrmi.carefirst.com_pool }
+
+create virtual prewebrmi_1191 { destination 170.22.112.20%112:1191 profiles add { tcp prewebrmi_1191-tcp-profile } source-address-translation { type automap }  pool prewebrmi_1191_pool }
+
+create virtual prod-pica.carefrist.com { destination 170.22.112.88%112:any profiles add { tcp prod-pica.carefrist.com-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool prod-pica.carefrist.com_pool }
+
+create virtual prodtib.carefirst.com { destination 170.22.112.83%112:any profiles add { tcp } source-address-translation { type automap }  pool prodtib.carefirst.com_pool }
+
+create virtual prodtib3 { destination 170.22.112.103%112:any profiles add { tcp } source-address-translation { type automap }  pool prodtib3_pool }
+
+create virtual prodtib3/4 { destination 170.22.112.105%112:any profiles add { tcp } source-address-translation { type automap }  pool prodtib3/4_pool }
+
+create virtual prodtib9588.carefirst.com { destination 170.22.112.92%112:9588 profiles add { tcp } source-address-translation { type automap }  pool prodtib9588.carefirst.com_pool }
+
+create virtual protib3-4_eivr_icc_web { destination 170.22.112.112%112:any profiles add { tcp } source-address-translation { type automap }  pool protib3-4_eivr_icc_web_pool }
+
+create virtual providerpractioner { destination 170.22.112.52%112:9740 profiles add { tcp } source-address-translation { type automap }  pool providerpractioner_pool }
+
+create virtual q2besales.carefirst.com { destination 170.22.112.90%112:any profiles add { tcp } source-address-translation { type automap }  pool q2besales.carefirst.com_pool }
+
+create virtual qualitymeasuresvc { destination 170.22.112.52%112:10561 profiles add { tcp qualitymeasuresvc-tcp-profile } source-address-translation { type automap }  pool qualitymeasuresvc_pool }
+
+create virtual tibco-eeob { destination 170.22.112.116%112:9841 profiles add { tcp } source-address-translation { type automap }  pool tibco-eeob_pool }
+
+create virtual tibco-protib { destination 170.22.112.91%112:any profiles add { tcp } source-address-translation { type automap }  pool tibco-protib_pool }
+
+create virtual tibpcmh-9756 { destination 170.22.112.52%112:9756 profiles add { tcp } source-address-translation { type automap }  pool tibpcmh-9756_pool }
+
+create virtual tibpcmhp-9780 { destination 170.22.112.52%112:9780 profiles add { tcp tibpcmhp-9780-tcp-profile } source-address-translation { type automap }  pool tibpcmhp-9780_pool }
+
+create virtual tibrealmedprod.carefirst.com { destination 170.22.112.80%112:any profiles add { tcp } source-address-translation { type automap }  pool tibrealmedprod.carefirst.com_pool }
+
+create virtual tibtv-claimsaudit { destination 170.22.112.60%112:9877 profiles add { tcp } source-address-translation { type automap }  pool tibtv-claimsaudit_pool }
+
+create virtual tibtv-claimsdata { destination 170.22.112.60%112:9875 profiles add { tcp } source-address-translation { type automap }  pool tibtv-claimsdata_pool }
+
+create virtual tibtv-claimssearch { destination 170.22.112.60%112:9876 profiles add { tcp } source-address-translation { type automap }  pool tibtv-claimssearch_pool }
+
+create virtual tibtv-ppeerrorreport { destination 170.22.112.60%112:9878 profiles add { tcp } source-address-translation { type automap }  pool tibtv-ppeerrorreport_pool }
+
+create virtual view-auth { destination 170.22.112.52%112:10724 profiles add { tcp view-auth-tcp-profile } source-address-translation { type automap }  pool view-auth_pool }
+
+create virtual webconnect { destination 170.22.112.127%112:9842 profiles add { tcp } source-address-translation { type automap }  pool webconnect_pool }
+
+create virtual well-account { destination 170.22.112.93%112:12616 profiles add { tcp } source-address-translation { type automap }  pool well-account_pool }
+
+create virtual well-exclusion { destination 170.22.112.93%112:12611 profiles add { tcp } source-address-translation { type automap }  pool well-exclusion_pool }
+
+create virtual well-product { destination 170.22.112.93%112:12610 profiles add { tcp } source-address-translation { type automap }  pool well-product_pool }
+
+create virtual workflowsvc1 { destination 170.22.112.52%112:10505 profiles add { tcp workflowsvc1-tcp-profile } source-address-translation { type automap }  pool workflowsvc1_pool }
+
+create virtual workflowsvc2 { destination 170.22.112.52%112:10506 profiles add { tcp workflowsvc2-tcp-profile } source-address-translation { type automap }  pool workflowsvc2_pool }
+
+create virtual workflowsvc3 { destination 170.22.112.52%112:10507 profiles add { tcp workflowsvc3-tcp-profile } source-address-translation { type automap }  pool workflowsvc3_pool }
+
+create virtual workflowsvc4 { destination 170.22.112.52%112:10508 profiles add { tcp workflowsvc4-tcp-profile } source-address-translation { type automap }  pool workflowsvc4_pool }
+
+There are 212 real servers defined
+There are 109 Virtual Servers defined

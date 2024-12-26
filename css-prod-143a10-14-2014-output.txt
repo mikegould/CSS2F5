@@ -1,0 +1,118 @@
+			----------  Virtual Server Configs begin here  ----------
+		Nodes listing
+
+create node lync-serv1 address 170.22.143.121%143
+					 Alias: lync-serv1-1
+create node lync-serv2 address 170.22.143.151%143
+					 Alias: lync-serv2-1
+create node lync-serv3 address 170.22.143.152%143
+					 Alias: lync-serv3-1
+create node sa-tnbvcs-p1 address 170.22.143.134%143
+create node sa-tnbvcs-p2 address 170.22.143.135%143
+create node sb-adexch-p1 address 170.22.143.98%143
+create node sb-adexch-p2 address 170.22.143.99%143
+create node sb-exca-p1 address 170.22.143.28%143
+create node sb-exca-p2 address 170.22.143.29%143
+create node sb-exhub-p1 address 170.22.143.33%143
+create node sb-exhub-p2 address 170.22.143.34%143
+create node sb-ocsav-p1 address 170.22.143.38%143
+					 Alias: sb-ocsfe-p3
+create node sb-ocsav-p2 address 170.22.143.39%143
+					 Alias: sb-ocsfe-p2
+create node sb-ocscwa-p1 address 170.22.143.61%143
+create node sb-ocscwa-p2 address 170.22.143.73%143
+create node sb-ocsdir-p1 address 170.22.143.43%143
+					 Alias: sv-xawi-p1
+create node sb-ocsdir-p2 address 170.22.143.44%143
+					 Alias: sv-xawi-p2
+create node sb-ocsfe-p1 address 170.22.143.113%143
+create node sb-ocsim-p1 address 170.22.143.49%143
+create node sb-ocsim-p2 address 170.22.143.50%143
+create node sb-ocsmedia-p1 address 170.22.143.54%143
+create node sb-ocsmedia-p2 address 170.22.143.55%143
+create node sb-ocsweb-p2 address 170.22.143.60%143
+create node sv-exhubca-p1 address 170.22.143.144%143
+create node sv-exhubca-p2 address 170.22.143.145%143
+create node sv-exhubca-p3 address 170.22.143.146%143
+create node sv-exhubca-p4 address 170.22.143.147%143
+create node sv-exhubca-p5 address 170.22.143.148%143
+create node sv-lyncdir-p1 address 170.22.143.115%143
+					 Alias: sv-lyncdir-p1-1
+					 Alias: sv-lyncdir-p1-2
+					 Alias: sv-ocsdir-p1
+create node sv-lyncdir-p2 address 170.22.143.129%143
+					 Alias: sv-lyncdir-p2-1
+					 Alias: sv-lyncdir-p2-2
+create node upstream_downstream address 170.22.118.164%143
+
+		Existing Health Monitors
+
+create monitor tcp-half-open isa-serv_mon destination *:8080
+create monitor tcp-half-open sa-tnbvcs-p1_mon destination *:any
+create monitor tcp-half-open sa-tnbvcs-p2_mon destination *:any
+create monitor tcp-half-open gateway-icmp destination *:any
+create monitor tcp-half-open ocscwa_mon destination *:443
+create monitor tcp-half-open tcp destination *:any
+create monitor tcp-half-open ocsfe_mon destination *:5061
+create monitor tcp-half-open ocsim_mon destination *:5061
+create monitor https sb-ocsweb-p2_mon destination *.443
+create monitor tcp-half-open exhubca_mon destination *:443
+create monitor tcp-half-open lyncdir_mon destination *:5061
+create monitor tcp-half-open sv-ocsdir-p1_mon destination *:5061
+create monitor http Citrix-Web-Interface_mon destination *.8080
+
+		Custom traffic profiles
+
+create profile tcp  create profile tcp exhubca-tcp-profile idle-timeout 450
+create profile tcp isa-serv-tcp-profile idle-timeout 250
+create profile tcp lyncdir-tcp-profile idle-timeout 250
+create profile tcp ocsfe-tcp-profile idle-timeout 250
+create profile tcp ocsim-tcp-profile idle-timeout 250
+create profile tcp tnbvcs-tcp-profile idle-timeout 250
+
+		Existing Pools
+
+create pool Citrix-Web-Interface_pool load-balancing-mode round-robin members add {  sb-ocsdir-p1:any  sb-ocsdir-p2:any  } monitor Citrix-Web-Interface_mon
+create pool adexch_pool load-balancing-mode round-robin members add {  sb-adexch-p1:any  sb-adexch-p2:any  } monitor gateway-icmp
+create pool exca_pool load-balancing-mode round-robin members add {  sb-exca-p1:any  sb-exca-p2:any  } monitor gateway-icmp
+create pool exhub_pool load-balancing-mode round-robin members add {  sb-exhub-p1:any  sb-exhub-p2:any  } monitor gateway-icmp
+create pool exhubca_pool load-balancing-mode round-robin members add {  sv-exhubca-p1:any  sv-exhubca-p2:any  sv-exhubca-p3:any  sv-exhubca-p4:any  sv-exhubca-p5:any  } monitor exhubca_mon
+create pool isa-serv_pool load-balancing-mode round-robin members add {  lync-serv1:any  lync-serv2:any  lync-serv3:any  lync-serv1:any  lync-serv2:any  lync-serv3:any  } monitor isa-serv_mon
+create pool lyncdir_pool load-balancing-mode round-robin members add {  sv-lyncdir-p1:any  sv-lyncdir-p1:any  sv-lyncdir-p1:any  sv-lyncdir-p2:any  sv-lyncdir-p2:any  sv-lyncdir-p2:any  } monitor lyncdir_mon
+create pool ocsav_pool load-balancing-mode round-robin members add {  sb-ocsav-p1:any  sb-ocsav-p2:any  } monitor gateway-icmp
+create pool ocscwa_pool load-balancing-mode round-robin members add {  sb-ocscwa-p1:any  sb-ocscwa-p2:any  } monitor ocscwa_mon
+create pool ocsfe_pool load-balancing-mode round-robin members add {  sb-ocsfe-p1:any  sb-ocsav-p2:any  sb-ocsav-p1:any  } monitor ocsfe_mon
+create pool ocsim_pool load-balancing-mode round-robin members add {  sb-ocsim-p2:any  sb-ocsim-p1:any  } monitor ocsim_mon
+create pool ocsmedia_pool load-balancing-mode round-robin members add {  sb-ocsmedia-p1:any  sb-ocsmedia-p2:any  } monitor gateway-icmp
+create pool tnbvcs_pool load-balancing-mode round-robin members add {  sa-tnbvcs-p1:any  sa-tnbvcs-p2:any  } monitor gateway-icmp
+
+		Existing Site Summary:
+
+create virtual Citrix-Web-Interface { destination 170.22.143.45%143:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool Citrix-Web-Interface_pool }
+
+create virtual adexch { destination 170.22.143.30%143:any profiles add { tcp } source-address-translation { type automap }  pool adexch_pool }
+
+create virtual exca { destination 170.22.143.27%143:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool exca_pool }
+
+create virtual exhub { destination 170.22.143.32%143:any profiles add { tcp } source-address-translation { type automap }  pool exhub_pool }
+
+create virtual exhubca { destination 170.22.143.149%143:any profiles add { tcp exhubca-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool exhubca_pool }
+
+create virtual isa-serv { destination 170.22.143.150%143:any profiles add { tcp isa-serv-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-serv_pool }
+
+create virtual lyncdir { destination 170.22.143.42%143:any profiles add { tcp lyncdir-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool lyncdir_pool }
+
+create virtual ocsav { destination 170.22.143.37%143:any profiles add { tcp } source-address-translation { type automap }  pool ocsav_pool }
+
+create virtual ocscwa { destination 170.22.143.59%143:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool ocscwa_pool }
+
+create virtual ocsfe { destination 170.22.143.120%143:any profiles add { tcp ocsfe-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool ocsfe_pool }
+
+create virtual ocsim { destination 170.22.143.48%143:any profiles add { tcp ocsim-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool ocsim_pool }
+
+create virtual ocsmedia { destination 170.22.143.53%143:any profiles add { tcp } source-address-translation { type automap }  pool ocsmedia_pool }
+
+create virtual tnbvcs { destination 170.22.143.136%143:any profiles add { tcp tnbvcs-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool tnbvcs_pool }
+
+There are 43 real servers defined
+There are 13 Virtual Servers defined

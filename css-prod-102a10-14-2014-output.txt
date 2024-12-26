@@ -1,0 +1,355 @@
+			----------  Virtual Server Configs begin here  ----------
+		Nodes listing
+
+create node MHIP.wac1 address 170.22.102.151%102
+create node MHIP.wac2 address 170.22.102.152%102
+create node NAT_server address 127.0.0.1%102
+					 Alias: NAT_sigaba
+create node NotesNet-wac1 address 170.22.102.86%102
+create node NotesNet-wac2 address 170.22.102.87%102
+create node SB-UAG-P1 address 170.22.102.100%102
+create node SB-UAG-P2 address 170.22.102.101%102
+create node associate.carefirst.com.wac1 address 170.22.102.73%102
+create node associate.carefirst.com.wac2 address 170.22.102.74%102
+create node board.carefirst.com.wac1 address 170.22.102.47%102
+create node board.carefirst.com.wac2 address 170.22.102.48%102
+create node cfcom16k address 170.22.102.32%102
+create node cfcom16k_carefirstlife address 170.22.102.50%102
+create node cfcom26k address 170.22.102.33%102
+create node cfcom26k_carefirstlife address 170.22.102.51%102
+create node claims-wac1 address 170.22.102.102%102
+					 Alias: sv-xa-web-p1
+create node claims-wac2 address 170.22.102.103%102
+					 Alias: sv-xa-web-p2
+create node fp3sun address 170.22.102.41%102
+create node fp4sun address 170.22.102.42%102
+create node itamwbsp1.broker address 170.22.102.228%102
+create node itamwbsp2.broker address 170.22.102.229%102
+create node ncia_wact1 address 170.22.102.114%102
+create node ncia_wact2 address 170.22.102.115%102
+create node provider-webseal1 address 170.22.102.247%102
+					 Alias: tamwbsp1.MemEmpProv
+create node provider-webseal2 address 170.22.102.248%102
+					 Alias: tamwbsp2.MemEmpProv
+create node provider-webseal3 address 170.22.102.249%102
+					 Alias: tamwbsp3.MemEmpProv
+create node providerp1 address 170.22.102.163%102
+create node providerp2 address 170.22.102.164%102
+create node providerp3 address 170.22.102.165%102
+create node sb-uag-p1-bizapp address 170.22.102.15%102
+create node sb-uag-p1-board address 170.22.102.26%102
+create node sb-uag-p1-boarddev address 170.22.102.34%102
+create node sb-uag-p1-careplan address 170.22.102.36%102
+create node sb-uag-p1-ems address 170.22.102.120%102
+create node sb-uag-p1-extemail address 170.22.102.122%102
+create node sb-uag-p1-extlync address 170.22.102.95%102
+create node sb-uag-p1-safetynet address 170.22.102.174%102
+create node sb-uag-p2-bizapp address 170.22.102.23%102
+create node sb-uag-p2-board address 170.22.102.27%102
+create node sb-uag-p2-boarddev address 170.22.102.35%102
+create node sb-uag-p2-careplan address 170.22.102.239%102
+create node sb-uag-p2-ems address 170.22.102.121%102
+create node sb-uag-p2-extemail address 170.22.102.146%102
+create node sb-uag-p2-extlync address 170.22.102.134%102
+create node sb-uag-p2-safetynet address 170.22.102.196%102
+create node secureemail1.carefirst.com address 170.22.102.109%102
+create node secureemail2.carefirst.com address 170.22.102.110%102
+create node sigaba_gate address 170.22.102.126%102
+create node sigaba_gate2 address 170.22.102.127%102
+create node sm-ctrx-ag1 address 170.22.102.137%102
+create node sm-ctrx-ag2 address 170.22.102.138%102
+create node sm-ctrx-ag3 address 170.22.102.24%102
+create node sm-isa-p1-ocs address 170.22.102.234%102
+					 Alias: sm-isa-p1-ocs-ssl
+create node sm-isa-p1-sharepoint address 170.22.102.244%102
+					 Alias: sm-isa-p1-sharepoint-ssl
+create node sm-isa-p2-ocs address 170.22.102.236%102
+					 Alias: sm-isa-p2-ocs-ssl
+create node sm-isa-p2-sharepoint address 170.22.102.238%102
+					 Alias: sm-isa-p2-sharepoint-ssl
+create node sv-ciamantiv-p1 address 170.22.102.207%102
+create node sv-ciamantiv-p2 address 170.22.102.208%102
+create node sv-exedge-p1 address 170.22.102.190%102
+create node sv-exedge-p2 address 170.22.102.191%102
+create node sv-secgw-p1 address 170.22.102.216%102
+create node sv-secgw-p2 address 170.22.102.217%102
+create node sv-viewsec-p1 address 170.22.102.37%102
+create node sv-viewsec-p2 address 170.22.102.38%102
+create node svl-axdmz-p1 address 170.22.102.241%102
+create node svl-axdmz-p2 address 170.22.102.242%102
+create node tamwbsp1.broker address 170.22.102.89%102
+create node tamwbsp1.broker.ssl address 170.22.102.131%102
+create node tamwbsp1.prod-service address 170.22.102.7%102
+					 Alias: tamwbsp1.prod-service2
+create node tamwbsp2.broker address 170.22.102.88%102
+create node tamwbsp2.broker.ssl address 170.22.102.132%102
+create node tamwbsp2.prod-service address 170.22.102.8%102
+					 Alias: tamwbsp2.prod-service2
+create node tamwbsp3.broker address 170.22.102.119%102
+create node tamwbsp3.broker.ssl address 170.22.102.133%102
+create node tamwbsp3.prod-service address 170.22.102.9%102
+					 Alias: tamwbsp3.prod-service2
+					 Alias: upstream_downstream
+create node tblwdegp1 address 170.22.102.222%102
+create node tblwdegp2 address 170.22.102.223%102
+create node tibco-bc1.carefirst.com address 170.22.102.220%102
+create node tibco-bc2.carefirst.com address 170.22.102.221%102
+create node w1-provider.bcbsde.com address 170.22.102.106%102
+create node w2-provider.bcbsde.com address 170.22.102.107%102
+create node webappsoap1 address 170.22.102.176%102
+					 Alias: webappsoap1-ssl
+create node webappsoap2 address 170.22.102.177%102
+					 Alias: webappsoap2-ssl
+create node webappsoap3 address 170.22.102.178%102
+
+		Existing Health Monitors
+		
+		#########################################
+		#  any port needs to be expressed as *  #
+		#########################################
+
+create monitor http marylandhealthinsuranceplan.net_mon destination *.8090
+create monitor http NotesNet_mon destination *.8090
+create monitor tcp-half-open sb-web-access-2_mon destination *:*
+create monitor http associate.carefirst.com.wac1_mon destination *.8090
+create monitor http associate.carefirst.com.wac2_mon destination *.8090
+create monitor http board.carefirst.com_mon destination *.8090
+create monitor http CareFirst_com_mon destination *.8090
+create monitor http carefirstlife_com_mon destination *.8090
+create monitor http claims-wac1_mon destination *.8090
+create monitor http claims-wac2_mon destination *.8090
+create monitor http FirePond_external_mon destination *.8090
+create monitor tcp-half-open tamwbspp.broker.carefirst.com_mon destination *:80
+create monitor http ncia_insurance_mon destination *.8090
+create monitor tcp-half-open provider-webseal1_mon destination *:80
+create monitor tcp-half-open provider-webseal2_mon destination *:80
+create monitor tcp-half-open provider-webseal3_mon destination *:80
+create monitor tcp-half-open provider.carefirst.com_mon destination *:80
+create monitor tcp-half-open isa-bizapp-ssl_mon destination *:80
+create monitor tcp-half-open board.carefirst.com-secure_mon destination *:80
+create monitor tcp-half-open boarddev.carefirst.com-https_mon destination *:80
+create monitor tcp-half-open isa-careplan-ssl_mon destination *:80
+create monitor tcp-half-open isa-discover-ssl_mon destination *:80
+create monitor tcp-half-open isa-exchange-ssl_mon destination *:80
+create monitor tcp-half-open isa-serv-ssl_mon destination *:80
+create monitor tcp-half-open isa-safetynet-https_mon destination *:80
+create monitor http secureemail.carefirst.com_mon destination *.8090
+create monitor tcp-half-open gateway-icmp destination *:*
+create monitor tcp-half-open isa-ocs_mon destination *:*
+create monitor https isa-ocs-ssl_mon destination *.443
+create monitor tcp-half-open isa-sharepoint_mon destination *:*
+create monitor https isa-sharepoint-ssl_mon destination *.443
+create monitor tcp-half-open PCMH-AV-SCAN_mon destination *:*
+create monitor tcp-half-open Viewsec-citrix-udp4172_mon destination *:*
+create monitor http associate.carefirst.com_mon destination *.80
+create monitor tcp-half-open axxfer-prod_mon destination *:22
+create monitor tcp-half-open tamwbspp.MemEmpProv_mon destination *:80
+create monitor tcp-half-open tamwbsp1.broker_mon destination *:80
+create monitor tcp-half-open tamwbsp.broker.ssl_mon destination *:80
+create monitor tcp-half-open tamwbsp.prod-services_mon destination *:80
+create monitor tcp-half-open tamwbsp.prod-services2_mon destination *:443
+create monitor tcp-half-open tamwbsp2.broker_mon destination *:80
+create monitor tcp-half-open tamwbsp3.broker_mon destination *:80
+create monitor tcp-half-open tblwdegprod_mon destination *:22
+create monitor tcp-half-open tibco-bc.carefirst.com_mon destination *:13443
+create monitor http provider.bcbsde.com_mon destination *.8090
+create monitor tcp-half-open webappsoap_mon destination *:80
+create monitor https webappsoap1-ssl_mon destination *.443
+create monitor https webappsoap2-ssl_mon destination *.443
+
+		Custom traffic profiles
+
+create profile tcp Citrix-Access-Gateway-tcp-profile idle-timeout 3500
+create profile tcp board.carefirst.com-http-tcp-profile idle-timeout 250
+create profile tcp board.carefirst.com-secure-tcp-profile idle-timeout 250
+create profile tcp boarddev.carefirst.com-http-tcp-profile idle-timeout 250
+create profile tcp boarddev.carefirst.com-https-tcp-profile idle-timeout 250
+create profile tcp isa-bizapp-tcp-profile idle-timeout 250
+create profile tcp isa-bizapp-ssl-tcp-profile idle-timeout 250
+create profile tcp isa-careplan-tcp-profile idle-timeout 250
+create profile tcp isa-careplan-ssl-tcp-profile idle-timeout 250
+create profile tcp isa-discover-tcp-profile idle-timeout 250
+create profile tcp isa-discover-ssl-tcp-profile idle-timeout 250
+create profile tcp isa-exchange-tcp-profile idle-timeout 250
+create profile tcp isa-exchange-ssl-tcp-profile idle-timeout 250
+create profile tcp isa-ocs-tcp-profile idle-timeout 250
+create profile tcp isa-ocs-ssl-tcp-profile idle-timeout 250
+create profile tcp isa-safetynet-http-tcp-profile idle-timeout 250
+create profile tcp isa-safetynet-https-tcp-profile idle-timeout 250
+create profile tcp isa-serv-tcp-profile idle-timeout 250
+create profile tcp isa-serv-ssl-tcp-profile idle-timeout 250
+create profile tcp isa-sharepoint-tcp-profile idle-timeout 250
+create profile tcp isa-sharepoint-ssl-tcp-profile idle-timeout 250
+create profile tcp tamwbspp.MemEmpProv-tcp-profile idle-timeout 41
+create profile tcp tamwbspp.broker.carefirst.com-tcp-profile idle-timeout 41
+create profile tcp tibco-bc.carefirst.com-tcp-profile idle-timeout 20
+
+		Existing Pools
+
+create pool CareFirst_com_pool load-balancing-mode round-robin members add {  cfcom26k:any  cfcom16k:any  } monitor CareFirst_com_mon
+create pool CareFirst_com_BrokerExpress_pool load-balancing-mode round-robin members add {  fp4sun:8081  fp3sun:8081  } monitor CareFirst_com_BrokerExpress_mon
+create pool Citrix-Access-Gateway_pool load-balancing-mode round-robin members add {  sm-ctrx-ag1:any  sm-ctrx-ag2:any  sm-ctrx-ag3:any  } monitor gateway-icmp
+create pool FirePond_external_pool load-balancing-mode round-robin members add {  fp4sun:any  fp3sun:any  } monitor FirePond_external_mon
+create pool NotesNet_pool load-balancing-mode round-robin members add {  NotesNet-wac1:any  NotesNet-wac2:any  } monitor NotesNet_mon
+create pool PCMH-AV-SCAN_pool load-balancing-mode round-robin members add {  sv-ciamantiv-p1:1344  sv-ciamantiv-p2:1344  } monitor PCMH-AV-SCAN_mon
+create pool Viewsec-citrix-4001_pool load-balancing-mode round-robin members add {  sv-viewsec-p1:4001  sv-viewsec-p2:4001  } monitor Viewsec-citrix-4001_mon
+create pool Viewsec-citrix-4172_pool load-balancing-mode round-robin members add {  sv-viewsec-p1:4172  sv-viewsec-p2:4172  } monitor Viewsec-citrix-4172_mon
+create pool Viewsec-citrix-443_pool load-balancing-mode round-robin members add {  sv-viewsec-p1:443  sv-viewsec-p2:443  } monitor Viewsec-citrix-443_mon
+create pool Viewsec-citrix-80_pool load-balancing-mode round-robin members add {  sv-viewsec-p1:80  sv-viewsec-p2:80  } monitor Viewsec-citrix-80_mon
+create pool Viewsec-citrix-udp4172_pool load-balancing-mode round-robin members add {  sv-viewsec-p1:4172  sv-viewsec-p2:4172  } monitor Viewsec-citrix-udp4172_mon
+create pool associate.carefirst.com_pool load-balancing-mode round-robin members add {  claims-wac1:any  claims-wac2:any  } monitor associate.carefirst.com_mon
+create pool axxfer-prod_pool load-balancing-mode round-robin members add {  svl-axdmz-p1:any  svl-axdmz-p2:any  } monitor axxfer-prod_mon
+create pool board.carefirst.com_pool load-balancing-mode round-robin members add {  board.carefirst.com.wac1:any  board.carefirst.com.wac2:any  } monitor board.carefirst.com_mon
+create pool board.carefirst.com-http_pool load-balancing-mode round-robin members add {  sb-uag-p1-board:80  sb-uag-p2-board:80  } monitor board.carefirst.com-http_mon
+create pool board.carefirst.com-secure_pool load-balancing-mode round-robin members add {  sb-uag-p1-board:443  sb-uag-p2-board:443  } monitor board.carefirst.com-secure_mon
+create pool boarddev.carefirst.com-http_pool load-balancing-mode round-robin members add {  sb-uag-p1-boarddev:80  sb-uag-p2-boarddev:80  } monitor boarddev.carefirst.com-http_mon
+create pool boarddev.carefirst.com-https_pool load-balancing-mode round-robin members add {  sb-uag-p1-boarddev:443  sb-uag-p2-boarddev:443  } monitor boarddev.carefirst.com-https_mon
+create pool carefirstlife_com_pool load-balancing-mode round-robin members add {  cfcom16k_carefirstlife:any  cfcom26k_carefirstlife:any  } monitor carefirstlife_com_mon
+create pool isa-bizapp_pool load-balancing-mode round-robin members add {  sb-uag-p1-bizapp:80  sb-uag-p2-bizapp:80  } monitor isa-bizapp_mon
+create pool isa-bizapp-ssl_pool load-balancing-mode round-robin members add {  sb-uag-p1-bizapp:443  sb-uag-p2-bizapp:443  } monitor isa-bizapp-ssl_mon
+create pool isa-careplan_pool load-balancing-mode round-robin members add {  sb-uag-p1-careplan:80  sb-uag-p2-careplan:80  } monitor isa-careplan_mon
+create pool isa-careplan-ssl_pool load-balancing-mode round-robin members add {  sb-uag-p1-careplan:443  sb-uag-p2-careplan:443  } monitor isa-careplan-ssl_mon
+create pool isa-discover_pool load-balancing-mode round-robin members add {  sb-uag-p1-ems:80  sb-uag-p2-ems:80  } monitor isa-discover_mon
+create pool isa-discover-ssl_pool load-balancing-mode round-robin members add {  sb-uag-p1-ems:443  sb-uag-p2-ems:443  } monitor isa-discover-ssl_mon
+create pool isa-exchange_pool load-balancing-mode round-robin members add {  sb-uag-p1-extemail:80  sb-uag-p2-extemail:80  } monitor isa-exchange_mon
+create pool isa-exchange-ssl_pool load-balancing-mode round-robin members add {  sb-uag-p1-extemail:443  sb-uag-p2-extemail:443  } monitor isa-exchange-ssl_mon
+create pool isa-ocs_pool load-balancing-mode round-robin members add {  sm-isa-p1-ocs:80  sm-isa-p2-ocs:80  } monitor isa-ocs_mon
+create pool isa-ocs-ssl_pool load-balancing-mode round-robin members add {  sm-isa-p1-ocs:443  sm-isa-p2-ocs:443  } monitor isa-ocs-ssl_mon
+create pool isa-safetynet-http_pool load-balancing-mode round-robin members add {  sb-uag-p1-safetynet:80  sb-uag-p2-safetynet:80  } monitor isa-safetynet-http_mon
+create pool isa-safetynet-https_pool load-balancing-mode round-robin members add {  sb-uag-p1-safetynet:443  sb-uag-p2-safetynet:443  } monitor isa-safetynet-https_mon
+create pool isa-serv_pool load-balancing-mode round-robin members add {  sb-uag-p1-extlync:any  sb-uag-p2-extlync:any  } monitor isa-serv_mon
+create pool isa-serv-ssl_pool load-balancing-mode round-robin members add {  sb-uag-p1-extlync:443  sb-uag-p2-extlync:443  } monitor isa-serv-ssl_mon
+create pool isa-sharepoint_pool load-balancing-mode round-robin members add {  sm-isa-p1-sharepoint:80  sm-isa-p2-sharepoint:80  } monitor isa-sharepoint_mon
+create pool isa-sharepoint-ssl_pool load-balancing-mode round-robin members add {  sm-isa-p1-sharepoint:443  sm-isa-p2-sharepoint:443  } monitor isa-sharepoint-ssl_mon
+create pool marylandhealthinsuranceplan.net_pool load-balancing-mode round-robin members add {  MHIP.wac1:any  MHIP.wac2:any  } monitor marylandhealthinsuranceplan.net_mon
+create pool mime_pool load-balancing-mode round-robin members add {  sv-exedge-p1:25  sv-exedge-p2:25  } monitor mime_mon
+create pool ncia_insurance_pool load-balancing-mode round-robin members add {  ncia_wact1:any  ncia_wact2:any  } monitor ncia_insurance_mon
+create pool provider.bcbsde.com_pool load-balancing-mode round-robin members add {  w1-provider.bcbsde.com:any  w2-provider.bcbsde.com:any  } monitor provider.bcbsde.com_mon
+create pool provider.carefirst.com_pool load-balancing-mode round-robin members add {  providerp3:any  providerp1:any  providerp2:any  } monitor provider.carefirst.com_mon
+create pool sb-web-access_pool load-balancing-mode round-robin members add {  SB-UAG-P1:80  SB-UAG-P2:80  } monitor sb-web-access_mon
+create pool sb-web-access-2_pool load-balancing-mode round-robin members add {  SB-UAG-P2:443  SB-UAG-P1:443  } monitor sb-web-access-2_mon
+create pool secgw_pool load-balancing-mode round-robin members add {  sv-secgw-p1:any  sv-secgw-p2:any  } monitor gateway-icmp
+create pool secureemail.carefirst.com_pool load-balancing-mode round-robin members add {  secureemail2.carefirst.com:any  secureemail1.carefirst.com:any  } monitor secureemail.carefirst.com_mon
+create pool sigaba_gateway_pool load-balancing-mode round-robin members add {  sigaba_gate:any  sigaba_gate2:any  } monitor gateway-icmp
+create pool tamwbsp.broker.ssl_pool load-balancing-mode round-robin members add {  tamwbsp1.broker.ssl:any  tamwbsp2.broker.ssl:any  tamwbsp3.broker.ssl:any  } monitor tamwbsp.broker.ssl_mon
+create pool tamwbsp.prod-services_pool load-balancing-mode round-robin members add {  tamwbsp1.prod-service:80  tamwbsp2.prod-service:80  tamwbsp3.prod-service:80  } monitor tamwbsp.prod-services_mon
+create pool tamwbsp.prod-services2_pool load-balancing-mode round-robin members add {  tamwbsp1.prod-service:443  tamwbsp2.prod-service:443  tamwbsp3.prod-service:443  } monitor tamwbsp.prod-services2_mon
+create pool tamwbspp.MemEmpProv_pool load-balancing-mode round-robin members add {  provider-webseal1:any  provider-webseal2:any  provider-webseal3:any  } monitor tamwbspp.MemEmpProv_mon
+create pool tamwbspp.broker.carefirst.com_pool load-balancing-mode round-robin members add {  itamwbsp1.broker:any  itamwbsp2.broker:any  } monitor tamwbspp.broker.carefirst.com_mon
+create pool tblwdegprod_pool load-balancing-mode round-robin members add {  tblwdegp1:any  tblwdegp2:any  } monitor tblwdegprod_mon
+create pool tibco-bc.carefirst.com_pool load-balancing-mode round-robin members add {  tibco-bc1.carefirst.com:any  tibco-bc2.carefirst.com:any  } monitor tibco-bc.carefirst.com_mon
+create pool webappsoap_pool load-balancing-mode round-robin members add {  webappsoap1:80  webappsoap2:80  webappsoap3:80  } monitor webappsoap_mon
+create pool webappsoap-ssl_pool load-balancing-mode round-robin members add {  webappsoap1:443  webappsoap2:443  webappsoap3:443  } monitor webappsoap_mon
+
+		Existing Site Summary:
+
+create virtual CareFirst_com { destination 170.22.102.31%102:any profiles add { tcp } source-address-translation { type automap }  pool CareFirst_com_pool }
+
+create virtual CareFirst_com_BrokerExpress { destination 170.22.102.31%102:8081 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool CareFirst_com_BrokerExpress_pool }
+
+create virtual Citrix-Access-Gateway { destination 170.22.102.71%102:any profiles add { tcp Citrix-Access-Gateway-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool Citrix-Access-Gateway_pool }
+
+create virtual FirePond_external { destination 170.22.102.40%102:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool FirePond_external_pool }
+
+create virtual NotesNet { destination 170.22.102.85%102:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool NotesNet_pool }
+
+create virtual PCMH-AV-SCAN { destination 170.22.102.199%102:1344 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool PCMH-AV-SCAN_pool }
+
+create virtual Viewsec-citrix-4001 { destination 170.22.102.39%102:4001 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool Viewsec-citrix-4001_pool }
+
+create virtual Viewsec-citrix-4172 { destination 170.22.102.39%102:4172 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool Viewsec-citrix-4172_pool }
+
+create virtual Viewsec-citrix-443 { destination 170.22.102.39%102:443 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool Viewsec-citrix-443_pool }
+
+create virtual Viewsec-citrix-80 { destination 170.22.102.39%102:80 profiles add { tcp } source-address-translation { type automap }  pool Viewsec-citrix-80_pool }
+
+create virtual Viewsec-citrix-udp4172 { destination 170.22.102.39%102:4172 profiles add { tcp } source-address-translation { type automap }  pool Viewsec-citrix-udp4172_pool }
+
+create virtual associate.carefirst.com { destination 170.22.102.77%102:any profiles add { tcp } source-address-translation { type automap }  pool associate.carefirst.com_pool }
+
+create virtual axxfer-prod { destination 170.22.102.240%102:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool axxfer-prod_pool }
+
+create virtual board.carefirst.com { destination 170.22.102.46%102:any profiles add { tcp } source-address-translation { type automap }  pool board.carefirst.com_pool }
+
+create virtual board.carefirst.com-http { destination 170.22.102.230%102:80 profiles add { tcp board.carefirst.com-http-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool board.carefirst.com-http_pool }
+
+create virtual board.carefirst.com-secure { destination 170.22.102.230%102:443 profiles add { tcp board.carefirst.com-secure-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool board.carefirst.com-secure_pool }
+
+create virtual boarddev.carefirst.com-http { destination 170.22.102.97%102:80 profiles add { tcp boarddev.carefirst.com-http-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool boarddev.carefirst.com-http_pool }
+
+create virtual boarddev.carefirst.com-https { destination 170.22.102.97%102:443 profiles add { tcp boarddev.carefirst.com-https-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool boarddev.carefirst.com-https_pool }
+
+create virtual carefirstlife_com { destination 170.22.102.52%102:any profiles add { tcp } source-address-translation { type automap }  pool carefirstlife_com_pool }
+
+create virtual isa-bizapp { destination 170.22.102.135%102:80 profiles add { tcp isa-bizapp-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-bizapp_pool }
+
+create virtual isa-bizapp-ssl { destination 170.22.102.135%102:443 profiles add { tcp isa-bizapp-ssl-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-bizapp-ssl_pool }
+
+create virtual isa-careplan { destination 170.22.102.218%102:80 profiles add { tcp isa-careplan-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-careplan_pool }
+
+create virtual isa-careplan-ssl { destination 170.22.102.218%102:443 profiles add { tcp isa-careplan-ssl-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-careplan-ssl_pool }
+
+create virtual isa-discover { destination 170.22.102.252%102:80 profiles add { tcp isa-discover-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-discover_pool }
+
+create virtual isa-discover-ssl { destination 170.22.102.252%102:443 profiles add { tcp isa-discover-ssl-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-discover-ssl_pool }
+
+create virtual isa-exchange { destination 170.22.102.227%102:80 profiles add { tcp isa-exchange-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-exchange_pool }
+
+create virtual isa-exchange-ssl { destination 170.22.102.227%102:443 profiles add { tcp isa-exchange-ssl-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-exchange-ssl_pool }
+
+create virtual isa-ocs { destination 170.22.102.226%102:80 profiles add { tcp isa-ocs-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-ocs_pool }
+
+create virtual isa-ocs-ssl { destination 170.22.102.226%102:443 profiles add { tcp isa-ocs-ssl-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-ocs-ssl_pool }
+
+create virtual isa-safetynet-http { destination 170.22.102.142%102:80 profiles add { tcp isa-safetynet-http-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-safetynet-http_pool }
+
+create virtual isa-safetynet-https { destination 170.22.102.142%102:443 profiles add { tcp isa-safetynet-https-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-safetynet-https_pool }
+
+create virtual isa-serv { destination 170.22.102.90%102:any profiles add { tcp isa-serv-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-serv_pool }
+
+create virtual isa-serv-ssl { destination 170.22.102.90%102:443 profiles add { tcp isa-serv-ssl-tcp-profile } source-address-translation { type automap }  pool isa-serv-ssl_pool }
+
+create virtual isa-sharepoint { destination 170.22.102.251%102:80 profiles add { tcp isa-sharepoint-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-sharepoint_pool }
+
+create virtual isa-sharepoint-ssl { destination 170.22.102.251%102:443 profiles add { tcp isa-sharepoint-ssl-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool isa-sharepoint-ssl_pool }
+
+create virtual marylandhealthinsuranceplan.net { destination 170.22.102.150%102:any profiles add { tcp } source-address-translation { type automap }  pool marylandhealthinsuranceplan.net_pool }
+
+create virtual mime { destination 170.22.102.55%102:25 profiles add { tcp } source-address-translation { type automap }  pool mime_pool }
+
+create virtual ncia_insurance { destination 170.22.102.113%102:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool ncia_insurance_pool }
+
+create virtual provider.bcbsde.com { destination 170.22.102.105%102:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool provider.bcbsde.com_pool }
+
+create virtual provider.carefirst.com { destination 170.22.102.145%102:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool provider.carefirst.com_pool }
+
+create virtual sb-web-access { destination 170.22.102.104%102:80 profiles add { tcp } source-address-translation { type automap }  pool sb-web-access_pool }
+
+create virtual sb-web-access-2 { destination 170.22.102.104%102:443 profiles add { tcp } source-address-translation { type automap }  pool sb-web-access-2_pool }
+
+create virtual secgw { destination 170.22.102.215%102:any profiles add { tcp } source-address-translation { type automap }  pool secgw_pool }
+
+create virtual secureemail.carefirst.com { destination 170.22.102.108%102:any profiles add { tcp } source-address-translation { type automap }  pool secureemail.carefirst.com_pool }
+
+create virtual sigaba_gateway { destination 170.22.102.125%102:any profiles add { tcp } source-address-translation { type automap }  pool sigaba_gateway_pool }
+
+create virtual tamwbsp.broker.ssl { destination 170.22.102.130%102:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool tamwbsp.broker.ssl_pool }
+
+create virtual tamwbsp.prod-services { destination 170.22.102.6%102:80 profiles add { tcp } source-address-translation { type automap }  pool tamwbsp.prod-services_pool }
+
+create virtual tamwbsp.prod-services2 { destination 170.22.102.6%102:443 profiles add { tcp } source-address-translation { type automap }  pool tamwbsp.prod-services2_pool }
+
+create virtual tamwbspp.MemEmpProv { destination 170.22.102.246%102:any profiles add { tcp tamwbspp.MemEmpProv-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool tamwbspp.MemEmpProv_pool }
+
+create virtual tamwbspp.broker.carefirst.com { destination 170.22.102.96%102:any profiles add { tcp tamwbspp.broker.carefirst.com-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool tamwbspp.broker.carefirst.com_pool }
+
+create virtual tblwdegprod { destination 170.22.102.225%102:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool tblwdegprod_pool }
+
+create virtual tibco-bc.carefirst.com { destination 170.22.102.219%102:any profiles add { tcp tibco-bc.carefirst.com-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool tibco-bc.carefirst.com_pool }
+
+create virtual webappsoap { destination 170.22.102.175%102:80 profiles add { tcp } source-address-translation { type automap }  pool webappsoap_pool }
+
+create virtual webappsoap-ssl { destination 170.22.102.175%102:443 profiles add { tcp } source-address-translation { type automap }  pool webappsoap-ssl_pool }
+
+There are 101 real servers defined
+There are 54 Virtual Servers defined

@@ -1,0 +1,793 @@
+			----------  Virtual Server Configs begin here  ----------
+		Nodes listing
+
+create node AE2Utilities-hsctib1 address 170.22.114.41%114
+					 Alias: bxnicgw835svc-hsctib1
+					 Alias: cgwbxni835svc-hsctib1
+					 Alias: cgwdcnsvc-hsctib1
+					 Alias: cgwfepxmlx12svc-hsctib1
+					 Alias: cgwppesvc-hsctib1
+					 Alias: cgwroutingsvc-hsctib1
+					 Alias: cgwupmsvc-hsctib1
+create node AE2Utilities-hsctib2 address 170.22.114.42%114
+					 Alias: bxnicgw835svc-hsctib2
+					 Alias: cgwbxni835svc-hsctib2
+					 Alias: cgwdcnsvc-hsctib2
+					 Alias: cgwfepxmlx12svc-hsctib2
+					 Alias: cgwppesvc-hsctib2
+					 Alias: cgwroutingsvc-hsctib2
+					 Alias: cgwupmsvc-hsctib2
+create node CFDocumentWriter-hsctib1 address 170.22.114.43%114
+					 Alias: cffacetssvcgrp1c-1
+					 Alias: tibhsc1
+					 Alias: tibhsc1-ODSProvider
+					 Alias: tibhsc1-accums
+					 Alias: tibhsc1-alias
+					 Alias: tibhsc1-back
+					 Alias: tibhsc1-claims_audit
+					 Alias: tibhsc1-claims_data
+					 Alias: tibhsc1-claims_search
+					 Alias: tibhsc1-dsprd
+					 Alias: tibhsc1-masstran
+					 Alias: tibhsc1-nasco
+					 Alias: tibhsc1-nascobenefits
+					 Alias: tibhsc1-ppeerror_reports
+					 Alias: tibhsc1-prov-vouch
+					 Alias: tibhsc1_1
+					 Alias: tibhsc1_MO
+					 Alias: tibhsc1_MO_SandE
+					 Alias: tibhsc1_a
+					 Alias: tibhsc1_b
+					 Alias: tibhsc1_c
+					 Alias: tibhsc1_d
+create node CFDocumentWriter-hsctib2 address 170.22.114.44%114
+					 Alias: cffacetssvcgrp1c-2
+					 Alias: tibhsc2
+					 Alias: tibhsc2-ODSProvider
+					 Alias: tibhsc2-accums
+					 Alias: tibhsc2-alias
+					 Alias: tibhsc2-back
+					 Alias: tibhsc2-claims_audit
+					 Alias: tibhsc2-claims_data
+					 Alias: tibhsc2-claims_search
+					 Alias: tibhsc2-dsprd
+					 Alias: tibhsc2-masstran
+					 Alias: tibhsc2-nasco
+					 Alias: tibhsc2-nascobenefits
+					 Alias: tibhsc2-ppeerror_reports
+					 Alias: tibhsc2-prov-vouch
+					 Alias: tibhsc2_1
+					 Alias: tibhsc2_MO
+					 Alias: tibhsc2_MO_SandE
+					 Alias: tibhsc2_a
+					 Alias: tibhsc2_b
+					 Alias: tibhsc2_c
+					 Alias: tibhsc2_d
+create node SV-SP10WFE-P1 address 170.22.114.207%114
+create node SV-SP10WFE-P1-a address 170.22.114.122%114
+					 Alias: SV-SP10WFE-P1-b
+					 Alias: ccwasp2
+					 Alias: sv-sp10wfe-p1-b
+create node SV-SP10WFE-P2 address 170.22.114.208%114
+create node SV-SP10WFE-P2-a address 170.22.114.141%114
+					 Alias: SV-SP10WFE-P2-b
+					 Alias: sv-clrty-p1
+create node SV-SP10WFE-P3 address 170.22.114.209%114
+create node SV-SP10WFE-P3-a address 170.22.114.142%114
+					 Alias: SV-SP10WFE-P3-b
+					 Alias: sv-clrty-p2
+create node SV-TRZFXI-P01 address 170.22.114.18%114
+create node SV-TRZFXI-P02 address 170.22.114.19%114
+create node ccwasp1 address 170.22.114.121%114
+create node ewrpnwp1 address 170.22.114.29%114
+create node ewrpnwp2 address 170.22.114.30%114
+create node flwasp1 address 170.22.114.135%114
+					 Alias: flwasp1-443
+create node flwasp2 address 170.22.114.136%114
+					 Alias: flwasp2-443
+create node initapp1 address 170.22.114.221%114
+create node initapp2 address 170.22.114.222%114
+create node initapp3 address 170.22.114.224%114
+create node initapp4 address 170.22.114.225%114
+create node itamldpp1 address 170.22.124.68%114
+create node itamldpp2 address 170.22.124.69%114
+create node itamwasp1-tdipp address 170.22.124.70%114
+create node itamwbsp3.associate-inside address 170.22.184.39%114
+create node itamwbsp4.associate-inside address 170.22.184.40%114
+create node itimappp1 address 170.22.124.56%114
+create node itimappp2 address 170.22.124.57%114
+create node itimdb2p2-tdipp address 170.22.124.59%114
+create node itimldapp1 address 170.22.124.54%114
+create node itimldapp2 address 170.22.124.55%114
+create node legthin-prd-1 address 170.22.114.31%114
+					 Alias: pgwaspr1
+					 Alias: pgwaspr1-a
+					 Alias: pgwaspr1-cdw
+					 Alias: pgwaspr1-picaprod
+					 Alias: pgwaspr1-sbcprod
+					 Alias: pgwaspr1-wellprod
+create node legthin-prd-2 address 170.22.114.32%114
+					 Alias: pgwaspr2
+					 Alias: pgwaspr2-a
+					 Alias: pgwaspr2-cdw
+					 Alias: pgwaspr2-picaprod
+					 Alias: pgwaspr2-sbcprod
+					 Alias: pgwaspr2-wellprod
+create node mhubapp1 address 170.22.115.9%114
+create node mhubapp2 address 170.22.115.10%114
+create node omswlomp1-1159 address 170.22.114.182%114
+					 Alias: omswlomp1-4889
+					 Alias: omswlomp1-7788
+					 Alias: omswlomp1-7799
+create node omswlomp2-1159 address 170.22.114.183%114
+					 Alias: omswlomp2-4889
+					 Alias: omswlomp2-7788
+					 Alias: omswlomp2-7799
+create node pgwaspr3 address 170.22.114.178%114
+create node pgwaspr4 address 170.22.114.179%114
+create node phubapp1 address 170.22.115.7%114
+create node phubapp2 address 170.22.115.8%114
+create node providerqa1 address 170.22.184.33%114
+create node providerqa2 address 170.22.184.34%114
+create node prptwas1 address 170.22.114.22%114
+create node prptwas2 address 170.22.114.23%114
+create node prptwas3 address 170.22.114.48%114
+create node prptwas4 address 170.22.114.49%114
+create node prwcm1 address 170.22.114.34%114
+create node prwcm2 address 170.22.114.133%114
+create node sb-trzfct-p1 address 170.22.114.91%114
+					 Alias: sv-trms-p1
+create node sb-trzfct-p2 address 170.22.114.92%114
+					 Alias: sv-trms-p2
+create node sb-trzfct-p3 address 170.22.114.93%114
+					 Alias: sv-trms-p3
+create node sm-ambersms-p1 address 170.22.114.25%114
+create node sm-ambersms-p2 address 170.22.114.26%114
+create node sm-ambersvs-p1 address 170.22.114.35%114
+create node sm-ctrxwi-p1 address 170.22.114.72%114
+create node sm-ctrxwi-p2 address 170.22.114.73%114
+create node sv-arsapp-p1 address 170.22.114.128%114
+create node sv-arsapp-p2 address 170.22.114.149%114
+create node sv-arsweb-p1 address 170.22.114.126%114
+create node sv-arsweb-p2 address 170.22.114.127%114
+create node sv-clrty13-p1 address 170.22.114.155%114
+					 Alias: sv-xawi-p1
+create node sv-clrty13-p2 address 170.22.114.156%114
+					 Alias: sv-xawi-p2
+					 Alias: sv-xwai-p1
+create node sv-clrty13-p3 address 170.22.114.158%114
+create node sv-crapp-p1_iis address 170.22.114.159%114
+					 Alias: sv-crapp-p1_web
+create node sv-crapp-p2_iis address 170.22.114.160%114
+					 Alias: sv-crapp-p2_web
+create node sv-drggrp-p1 address 170.22.114.63%114
+create node sv-drggrp-p2 address 170.22.114.64%114
+create node sv-drggrp-p3 address 170.22.114.66%114
+					 Alias: sv-trzwas-p1
+create node sv-drggrp-p4 address 170.22.114.67%114
+					 Alias: sv-trzwas-p2
+					 Alias: sv-trzwas-p2:9081
+					 Alias: sv-trzwas-p2:9082
+create node sv-fepchk-p3 address 170.22.115.22%114
+create node sv-fepchk-p4 address 170.22.115.23%114
+create node sv-ldapc-p1 address 170.22.114.105%114
+create node sv-ldapc-p2 address 170.22.114.106%114
+create node sv-ldapc-p3 address 170.22.114.107%114
+create node sv-ldapwebc-p1 address 170.22.114.108%114
+create node sv-ldapwebc-p2 address 170.22.114.109%114
+create node sv-liveste-p1 address 170.22.114.82%114
+					 Alias: sv-trzfct-p1
+create node sv-liveste-p2 address 170.22.114.210%114
+create node sv-liveste-p3 address 170.22.114.211%114
+create node sv-livesteint-p1 address 170.22.115.50%114
+create node sv-livesteint-p2 address 170.22.115.51%114
+create node sv-livesteint-p3 address 170.22.115.52%114
+create node sv-shrptweb-p1 address 170.22.114.55%114
+create node sv-shrptweb-p2 address 170.22.114.56%114
+create node sv-sp-10wfe-p1 address 170.22.114.193%114
+					 Alias: sv-sp-10wfe-p1-alias
+create node sv-sp-10wfe-p2 address 170.22.114.194%114
+					 Alias: sv-sp-10wfe-p2-alias
+create node sv-sp-10wfe-p3 address 170.22.114.195%114
+					 Alias: sv-sp-10wfe-p3-alias
+create node sv-sp10wfe-p1 address 170.22.114.185%114
+create node sv-sp10wfe-p1-fepbridge address 170.22.115.18%114
+create node sv-sp10wfe-p1-safetynet address 170.22.114.251%114
+create node sv-sp10wfe-p1-share address 170.22.115.12%114
+					 Alias: sv-sp10wfe-p1-share-https
+create node sv-sp10wfe-p1a address 170.22.114.170%114
+create node sv-sp10wfe-p2 address 170.22.114.186%114
+create node sv-sp10wfe-p2-fepbridge address 170.22.115.19%114
+create node sv-sp10wfe-p2-safetynet address 170.22.114.252%114
+create node sv-sp10wfe-p2-share address 170.22.115.13%114
+					 Alias: sv-sp10wfe-p2-share-https
+create node sv-sp10wfe-p2a address 170.22.114.171%114
+create node sv-sp10wfe-p3 address 170.22.114.187%114
+create node sv-sp10wfe-p3-fepbridge address 170.22.115.20%114
+create node sv-sp10wfe-p3-safetynet address 170.22.114.253%114
+create node sv-sp10wfe-p3-share address 170.22.115.14%114
+					 Alias: sv-sp10wfe-p3-share-https
+create node sv-sp10wfe-p3a address 170.22.114.172%114
+create node sv-sp10wfe-sp2app-p1 address 170.22.114.231%114
+create node sv-sp10wfe-sp2app-p2 address 170.22.114.232%114
+create node sv-sp10wfe-sp2app-p3 address 170.22.114.233%114
+create node sv-sp10wfe-spapp-p1 address 170.22.114.227%114
+create node sv-sp10wfe-spapp-p2 address 170.22.114.228%114
+create node sv-sp10wfe-spapp-p3 address 170.22.114.229%114
+create node sv-sso-p1 address 170.22.114.53%114
+					 Alias: sv-timagt-p1
+create node sv-sso-p2 address 170.22.114.54%114
+					 Alias: sv-timagt-p2
+create node sv-trzfct-p2 address 170.22.114.83%114
+create node sv-trzfct-p3 address 170.22.114.84%114
+create node sv-trzfct-p4 address 170.22.114.87%114
+create node sv-trzfct-p5 address 170.22.114.88%114
+create node sv-trzwas-p01 address 170.22.114.153%114
+					 Alias: sv-trzwas-p01-a
+					 Alias: sv-trzwas-p01-b
+create node sv-trzwas-p02 address 170.22.114.154%114
+					 Alias: sv-trzwas-p02-a
+					 Alias: sv-trzwas-p02-b
+create node sv-trzwas-p3 address 170.22.114.68%114
+create node sv-trzwas-p4 address 170.22.114.69%114
+					 Alias: sv-trzwas-p4:9081
+					 Alias: sv-trzwas-p4:9082
+create node svl-apagent-p1-a address 170.22.114.246%114
+					 Alias: svl-apagent-p1-b
+					 Alias: svl-apagent-p1-c
+					 Alias: svl-apagent-p1-d
+					 Alias: svl-apagent-p1-e
+					 Alias: svl-apagent-p1-f
+					 Alias: svl-apagent-p1-g
+create node svl-apagent-p2-a address 170.22.114.247%114
+					 Alias: svl-apagent-p2-b
+					 Alias: svl-apagent-p2-c
+					 Alias: svl-apagent-p2-d
+					 Alias: svl-apagent-p2-e
+					 Alias: svl-apagent-p2-f
+					 Alias: svl-apagent-p2-g
+create node svl-axxfer-p1 address 170.22.114.241%114
+create node svl-axxfer-p2 address 170.22.114.242%114
+create node svl-securitysyslog-p1 address 170.22.115.45%114
+create node svl-securitysyslog-p2 address 170.22.114.46%114
+create node svl-tibpe-p1 address 170.22.115.30%114
+create node svl-tibpe-p2 address 170.22.115.31%114
+create node tamldpp1 address 170.22.124.28%114
+create node tamldpp2 address 170.22.124.23%114
+create node tampolp1 address 170.22.124.26%114
+create node tampolp2 address 170.22.124.21%114
+create node tamwasp1 address 170.22.124.25%114
+create node tamwasp2 address 170.22.124.30%114
+create node tamwbsp4 address 170.22.184.20%114
+create node tamwbsp4-brokerqa address 170.22.184.27%114
+					 Alias: tamwbsp4-brokerqa-ssl
+create node tamwbsp4-brokerstg address 170.22.184.24%114
+					 Alias: tamwbsp4-brokerstg-ssl
+create node tamwbsp5 address 170.22.184.21%114
+create node tamwbsp5-brokerqa address 170.22.184.28%114
+					 Alias: tamwbsp5-brokerqa-ssl
+create node tamwbsp5-brokerstg address 170.22.184.25%114
+					 Alias: tamwbsp5-brokerstg-ssl
+create node tblwdstp1 address 170.22.114.102%114
+create node tblwdstp2 address 170.22.114.103%114
+create node timwasp1 address 170.22.124.27%114
+create node timwasp2 address 170.22.124.22%114
+create node upstream_downstream address 170.22.118.100%114
+
+		Existing Health Monitors
+
+create monitor tcp-half-open AE2Utilities_mon destination *:9001
+create monitor tcp-half-open CFDocumentWriter_mon destination *:12700
+create monitor tcp-half-open mysite.carefirst.com_mon destination *:any
+create monitor tcp-half-open shpt-sheriff-ssl_mon destination *:443
+create monitor tcp-half-open shpt-sheriff_mon destination *:80
+create monitor http gateway-icmp destination *.80
+create monitor tcp-half-open hsctib-cgw_mon destination *:9926
+create monitor tcp-half-open cffacetssvcgrp1c_mon destination *:12638
+create monitor tcp-half-open flwasp_mon destination *:80
+create monitor tcp-half-open flwas-443_mon destination *:443
+create monitor tcp-half-open tdipp_mon destination *:1099
+create monitor tcp-half-open itimappp_mon destination *:2810
+create monitor http legthin-prd_mon destination *.80
+create monitor http mhub-prod_mon destination *.8080
+create monitor tcp-half-open gridcontrol.carefirst.com_mon destination *:1159
+create monitor tcp-half-open pgwaspr1-a_mon destination *:9195
+create monitor tcp-half-open pgwaspr2-a_mon destination *:9195
+create monitor http phub-prod_mon destination *.8080
+create monitor tcp-half-open sm-ambersvs-p1_mon destination *:16080
+create monitor http Citrix-Web-Interface_mon destination *.8080
+create monitor http sv-clrty-p1_mon destination *.80
+create monitor http sv-clrty-p2_mon destination *.80
+create monitor http sv-clrty13-p3_mon destination *.80
+create monitor tcp-half-open impact360-iis_mon destination *:7001
+create monitor tcp-half-open impact360-web_mon destination *:80
+create monitor tcp-half-open fepchk_mon destination *:80
+create monitor tcp-half-open ldapwebp_mon destination *:80
+create monitor tcp-half-open shrptprod_mon destination *:80
+create monitor tcp-half-open sv-sp-10wfe-vip_mon destination *:80
+create monitor tcp-half-open boarddev-https_mon destination *:any
+create monitor tcp-half-open sv-sp10wfe-secure_mon destination *:any
+create monitor tcp-half-open sv-sp10wfe-p1-b_mon destination *:80
+create monitor tcp-half-open fepbridgeservices-https_mon destination *:80
+create monitor tcp-half-open safetynet-https_mon destination *:any
+create monitor tcp-half-open share_mon destination *:80
+create monitor tcp-half-open share-https_mon destination *:443
+create monitor tcp-half-open pcmhcareplan_mon destination *:80
+create monitor tcp-half-open sp2apps-ssl_mon destination *:any
+create monitor tcp-half-open spapps-ssl_mon destination *:any
+create monitor tcp-half-open tcp destination *:any
+create monitor tcp-half-open svtrms_mon destination *:80
+create monitor http sv-trzfct-p1_mon destination *.80
+create monitor http sv-trzfct-p2_mon destination *.80
+create monitor http sv-trzfct-p3_mon destination *.80
+create monitor tcp-half-open prodfacets_mon destination *:9081
+create monitor tcp-half-open sv-trzwas-p6_mon destination *:9081
+create monitor http Citrix-Web-Interface-B_mon destination *.8080
+create monitor http sv-xwai-p1_mon destination *.8080
+create monitor tcp-half-open amberproxyp2-vip_mon destination *:16080
+create monitor tcp-half-open amberproxyp3-vip_mon destination *:16070
+create monitor tcp-half-open amberproxyp3-vip-1_mon destination *:16090
+create monitor tcp-half-open amberproxyp4-vip_mon destination *:16100
+create monitor tcp-half-open amberproxyp5-vip_mon destination *:16050
+create monitor tcp-half-open amberproxyp5-vip-1_mon destination *:16060
+create monitor tcp-half-open amberproxyp2_mon destination *:16060
+create monitor tcp-half-open axxfer-prod2_mon destination *:4455
+create monitor tcp-half-open splunk_mon destination *:80
+create monitor tcp-half-open brokerqa.insidecarefirst_mon destination *:any
+create monitor https brokerqa.insidecarefirst-ssl_mon destination *.443
+create monitor tcp-half-open brokerstg.insidecarefirst_mon destination *:any
+create monitor https brokerstg.insidecarefirst-ssl_mon destination *.443
+create monitor tcp-half-open tblwdstprd2_mon destination *:4455
+create monitor tcp-half-open tibhsc_mon destination *:9116
+create monitor tcp-half-open CFODSProvider_mon destination *:10760
+create monitor tcp-half-open CFODSNascoAccums_mon destination *:9726
+create monitor tcp-half-open providercalldeflection_mon destination *:any
+create monitor tcp-half-open tibhsc-vip_mon destination *:9091
+create monitor tcp-half-open tibhsc-1_mon destination *:19877
+create monitor tcp-half-open odscsdsprd_mon destination *:9491
+create monitor tcp-half-open tibmasstran_mon destination *:9207
+create monitor tcp-half-open CFODSNascoEligibility_mon destination *:9317
+create monitor tcp-half-open nascobenefits_mon destination *:9593
+create monitor tcp-half-open ProvVoucherPDFGeneration_mon destination *:10749
+create monitor tcp-half-open tibhsc_1_mon destination *:9293
+create monitor tcp-half-open tibhsc_MO_mon destination *:9033
+create monitor tcp-half-open tibhsc_MO_SandE_mon destination *:9106
+create monitor tcp-half-open tibhsc_a_mon destination *:9747
+create monitor tcp-half-open tibhsc_b_mon destination *:9741
+create monitor tcp-half-open tibhsc_c_mon destination *:9750
+create monitor tcp-half-open tibhsc_d_mon destination *:9744
+
+		Custom traffic profiles
+
+create profile tcp  create profile http axxfer-prod-http-profile fallback-server svl-axxfer-p2
+create profile http axxfer-prod2-http-profile fallback-server svl-axxfer-p1
+create profile tcp cffacetssvcgrp1c-tcp-profile idle-timeout 7
+create profile tcp clarity-tcp-profile idle-timeout 125
+create profile http itimldapp-http-profile fallback-server itimldapp2
+create profile tcp ldapp-tcp-profile idle-timeout 30
+create profile http ldapwebp-http-profile fallback-server sv-ldapwebc-p2
+create profile tcp myinside-tcp-profile idle-timeout 5100
+create profile tcp prptwas-tcp-profile idle-timeout 5100
+create profile tcp prwcm-carefirst.com-tcp-profile idle-timeout 3
+create profile tcp sv-trzfct-p6-tcp-profile idle-timeout 7
+create profile tcp svtrms-tcp-profile idle-timeout 200
+create profile tcp tam-ldap-vip-tcp-profile idle-timeout 5100
+create profile http tam-ldap-vip-http-profile idle-timeout 5100
+fallback-server itamldpp2
+create profile http tblwdstprd1-http-profile fallback-server tblwdstp1
+create profile http tblwdstprd2-http-profile fallback-server tblwdstp2
+create profile tcp tibhsc_MO-tcp-profile idle-timeout 7
+create profile tcp webappint-tcp-profile idle-timeout 55
+
+		Existing Pools
+
+create pool AE2Utilities_pool load-balancing-mode round-robin members add {  AE2Utilities-hsctib1:9001  AE2Utilities-hsctib2:9001  } monitor AE2Utilities_mon
+create pool CFDocumentWriter_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:12700  CFDocumentWriter-hsctib2:12700  } monitor CFDocumentWriter_mon
+create pool CFODSNascoAccums_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:9726  CFDocumentWriter-hsctib2:9726  } monitor CFODSNascoAccums_mon
+create pool CFODSNascoEligibility_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:9317  CFDocumentWriter-hsctib2:9317  } monitor CFODSNascoEligibility_mon
+create pool CFODSProvider_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:10760  CFDocumentWriter-hsctib2:10760  } monitor CFODSProvider_mon
+create pool Citrix-Web-Interface_pool load-balancing-mode round-robin members add {  sm-ctrxwi-p1:any  sm-ctrxwi-p2:any  } monitor Citrix-Web-Interface_mon
+create pool Citrix-Web-Interface-B_pool load-balancing-mode round-robin members add {  sv-clrty13-p1:any  sv-clrty13-p2:any  } monitor Citrix-Web-Interface-B_mon
+create pool HEPMS_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool ODSBenefitsR2_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:9318  CFDocumentWriter-hsctib2:9318  } monitor ODSBenefitsR2_mon
+create pool ProvVoucherPDFGeneration_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:10749  CFDocumentWriter-hsctib2:10749  } monitor ProvVoucherPDFGeneration_mon
+create pool RemittanceService_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:9879  CFDocumentWriter-hsctib2:9879  } monitor RemittanceService_mon
+create pool aeprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  pgwaspr3:any  pgwaspr4:any  } monitor gateway-icmp
+create pool aesbatchprod_pool load-balancing-mode round-robin members add {  pgwaspr3:any  pgwaspr4:any  } monitor gateway-icmp
+create pool aesprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool amberproxyp1:16070_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16070  svl-apagent-p2-a:16070  } monitor amberproxyp1:16070_mon
+create pool amberproxyp1:16080_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16080  svl-apagent-p2-a:16080  } monitor amberproxyp1:16080_mon
+create pool amberproxyp1:16090_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16090  svl-apagent-p2-a:16090  } monitor amberproxyp1:16090_mon
+create pool amberproxyp1:16100_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16100  svl-apagent-p2-a:16100  } monitor amberproxyp1:16100_mon
+create pool amberproxyp2_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16060  svl-apagent-p2-a:16060  } monitor amberproxyp2_mon
+create pool amberproxyp2-vip_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16080  svl-apagent-p2-a:16080  } monitor amberproxyp2-vip_mon
+create pool amberproxyp3-vip_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16070  svl-apagent-p2-a:16070  } monitor amberproxyp3-vip_mon
+create pool amberproxyp3-vip-1_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16090  svl-apagent-p2-a:16090  } monitor amberproxyp3-vip-1_mon
+create pool amberproxyp4-vip_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16100  svl-apagent-p2-a:16100  } monitor amberproxyp4-vip_mon
+create pool amberproxyp5-vip_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16050  svl-apagent-p2-a:16050  } monitor amberproxyp5-vip_mon
+create pool amberproxyp5-vip-1_pool load-balancing-mode round-robin members add {  svl-apagent-p1-a:16060  svl-apagent-p2-a:16060  } monitor amberproxyp5-vip-1_mon
+create pool arsapp_pool load-balancing-mode round-robin members add {  sv-arsapp-p1:any  sv-arsapp-p2:any  } monitor gateway-icmp
+create pool arsweb_pool load-balancing-mode round-robin members add {  sv-arsweb-p1:any  sv-arsweb-p2:any  } monitor gateway-icmp
+create pool axxfer-prod_pool load-balancing-mode round-robin members add {  svl-axxfer-p1:any  svl-axxfer-p2:any  } monitor axxfer-prod_mon
+create pool axxfer-prod2_pool load-balancing-mode round-robin members add {  svl-axxfer-p2:any  svl-axxfer-p1:any  } monitor axxfer-prod2_mon
+create pool benprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool benwsprod_pool load-balancing-mode round-robin members add {  pgwaspr3:any  pgwaspr4:any  } monitor gateway-icmp
+create pool boarddev-http_pool load-balancing-mode round-robin members add {  sv-sp-10wfe-p1:80  sv-sp-10wfe-p2:80  sv-sp-10wfe-p3:80  } monitor boarddev-http_mon
+create pool boarddev-https_pool load-balancing-mode round-robin members add {  sv-sp-10wfe-p1:443  sv-sp-10wfe-p2:443  sv-sp-10wfe-p3:443  } monitor boarddev-https_mon
+create pool brokerqa.insidecarefirst_pool load-balancing-mode round-robin members add {  tamwbsp4-brokerqa:80  tamwbsp5-brokerqa:80  } monitor brokerqa.insidecarefirst_mon
+create pool brokerqa.insidecarefirst-ssl_pool load-balancing-mode round-robin members add {  tamwbsp4-brokerqa:443  tamwbsp5-brokerqa:443  } monitor brokerqa.insidecarefirst-ssl_mon
+create pool brokerstg.insidecarefirst_pool load-balancing-mode round-robin members add {  tamwbsp4-brokerstg:80  tamwbsp5-brokerstg:80  } monitor brokerstg.insidecarefirst_mon
+create pool brokerstg.insidecarefirst-ssl_pool load-balancing-mode round-robin members add {  tamwbsp4-brokerstg:443  tamwbsp5-brokerstg:443  } monitor brokerstg.insidecarefirst-ssl_mon
+create pool ccwasprod.carefirst.com_pool load-balancing-mode round-robin members add {  ccwasp1:any  SV-SP10WFE-P1-a:any  } monitor gateway-icmp
+create pool cdw_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool cffacetssvcgrp1c_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:12638  CFDocumentWriter-hsctib2:12638  } monitor cffacetssvcgrp1c_mon
+create pool cgprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool clarity_pool load-balancing-mode round-robin members add {  sv-clrty13-p1:any  sv-clrty13-p2:any  } monitor gateway-icmp
+create pool document-mail_pool load-balancing-mode round-robin members add {  legthin-prd-2:any  legthin-prd-1:any  } monitor gateway-icmp
+create pool drggrp_pool load-balancing-mode round-robin members add {  sv-drggrp-p3:any  sv-drggrp-p4:any  sv-drggrp-p1:any  sv-drggrp-p2:any  } monitor gateway-icmp
+create pool ecom.carefirst.com_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool esprod.carefirst.com_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool esso.security_pool load-balancing-mode round-robin members add {  sv-sso-p1:any  sv-sso-p2:any  } monitor gateway-icmp
+create pool ewrpnwpprod_pool load-balancing-mode round-robin members add {  ewrpnwp1:any  ewrpnwp2:any  } monitor gateway-icmp
+create pool ewrpnwpsupt_pool load-balancing-mode round-robin members add {  ewrpnwp1:any  ewrpnwp2:any  } monitor gateway-icmp
+create pool fepbridgeservices_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1-fepbridge:80  sv-sp10wfe-p2-fepbridge:80  sv-sp10wfe-p3-fepbridge:80  } monitor fepbridgeservices_mon
+create pool fepbridgeservices-https_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1-fepbridge:443  sv-sp10wfe-p2-fepbridge:443  sv-sp10wfe-p3-fepbridge:443  } monitor fepbridgeservices-https_mon
+create pool fepchk_pool load-balancing-mode round-robin members add {  sv-fepchk-p3:80  sv-fepchk-p4:80  } monitor fepchk_mon
+create pool feplpgprd.carefirst.com_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool flwas_pool load-balancing-mode round-robin members add {  flwasp1:80  flwasp2:80  } monitor flwas_mon
+create pool flwas-443_pool load-balancing-mode round-robin members add {  flwasp1:443  flwasp2:443  } monitor flwas-443_mon
+create pool flwasp_pool load-balancing-mode round-robin members add {  flwasp1:any  flwasp2:any  } monitor flwasp_mon
+create pool gridcontrol.carefirst.com_pool load-balancing-mode round-robin members add {  omswlomp1-1159:any  omswlomp2-1159:any  omswlomp1-1159:any  omswlomp2-1159:any  omswlomp1-1159:any  omswlomp2-1159:any  omswlomp1-1159:any  omswlomp2-1159:any  } monitor gridcontrol.carefirst.com_mon
+create pool hsctib-cgw_pool load-balancing-mode round-robin members add {  AE2Utilities-hsctib1:any  AE2Utilities-hsctib1:any  AE2Utilities-hsctib1:any  AE2Utilities-hsctib1:any  AE2Utilities-hsctib1:any  AE2Utilities-hsctib1:any  AE2Utilities-hsctib1:any  AE2Utilities-hsctib2:any  AE2Utilities-hsctib2:any  AE2Utilities-hsctib2:any  AE2Utilities-hsctib2:any  AE2Utilities-hsctib2:any  AE2Utilities-hsctib2:any  AE2Utilities-hsctib2:any  } monitor hsctib-cgw_mon
+create pool im6.carefirst.com_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool impact360-iis_pool load-balancing-mode round-robin members add {  sv-crapp-p1_iis:7001  sv-crapp-p2_iis:7001  } monitor impact360-iis_mon
+create pool impact360-web_pool load-balancing-mode round-robin members add {  sv-crapp-p1_iis:80  sv-crapp-p2_iis:80  } monitor impact360-web_mon
+create pool initappa_pool load-balancing-mode round-robin members add {  initapp1:any  initapp2:any  } monitor gateway-icmp
+create pool initappb_pool load-balancing-mode round-robin members add {  initapp3:any  initapp4:any  } monitor gateway-icmp
+create pool itimappp_pool load-balancing-mode round-robin members add {  itimappp1:any  itimappp2:any  } monitor itimappp_mon
+create pool itimldapp_pool load-balancing-mode round-robin members add {  itimldapp1:any  itimldapp2:any  } monitor gateway-icmp
+create pool ldapp_pool load-balancing-mode round-robin members add {  sv-ldapc-p1:any  sv-ldapc-p2:any  sv-ldapc-p3:any  } monitor gateway-icmp
+create pool ldapwebp_pool load-balancing-mode round-robin members add {  sv-ldapwebc-p1:any  sv-ldapwebc-p2:any  } monitor ldapwebp_mon
+create pool legthin-prd_pool load-balancing-mode round-robin members add {  legthin-prd-1:80  legthin-prd-2:80  } monitor legthin-prd_mon
+create pool livesite_pool load-balancing-mode round-robin members add {  sv-liveste-p1:any  sv-liveste-p2:any  sv-liveste-p3:any  } monitor gateway-icmp
+create pool livesiteint_pool load-balancing-mode round-robin members add {  sv-livesteint-p1:any  sv-livesteint-p2:any  sv-livesteint-p3:any  } monitor gateway-icmp
+create pool mhub-prod_pool load-balancing-mode round-robin members add {  mhubapp1:8080  mhubapp2:8080  } monitor mhub-prod_mon
+create pool myinside_pool load-balancing-mode round-robin members add {  prptwas1:any  prptwas2:any  prptwas3:any  prptwas4:any  } monitor gateway-icmp
+create pool mysite.carefirst_pool load-balancing-mode round-robin members add {  SV-SP10WFE-P1:443  SV-SP10WFE-P2:443  SV-SP10WFE-P3:443  } monitor mysite.carefirst_mon
+create pool mysite.carefirst.com_pool load-balancing-mode round-robin members add {  SV-SP10WFE-P1:80  SV-SP10WFE-P2:80  SV-SP10WFE-P3:80  } monitor mysite.carefirst.com_mon
+create pool nascobenefits_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:9593  CFDocumentWriter-hsctib2:9593  } monitor nascobenefits_mon
+create pool odscsdsprd_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor odscsdsprd_mon
+create pool pcmh_prd-vip_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  pgwaspr3:any  pgwaspr4:any  } monitor gateway-icmp
+create pool pcmhcareplan_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1a:any  sv-sp10wfe-p2a:any  sv-sp10wfe-p3a:any  } monitor pcmhcareplan_mon
+create pool pcprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool pcsprod-vip_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool pegaprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool phub-prod_pool load-balancing-mode round-robin members add {  phubapp1:8080  phubapp2:8080  } monitor phub-prod_mon
+create pool picaprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool prodfacets_pool load-balancing-mode round-robin members add {  sv-trzwas-p01:any  sv-trzwas-p01:any  sv-trzwas-p02:any  sv-trzwas-p02:any  sv-trzwas-p01:any  sv-trzwas-p02:any  } monitor prodfacets_mon
+create pool providercalldeflection_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:9330  CFDocumentWriter-hsctib2:9330  } monitor providercalldeflection_mon
+create pool providerqa.insidecarefirst.com_pool load-balancing-mode round-robin members add {  providerqa1:any  providerqa2:any  } monitor gateway-icmp
+create pool prptwas_pool load-balancing-mode round-robin members add {  prptwas1:any  prptwas2:any  prptwas3:any  prptwas4:any  } monitor gateway-icmp
+create pool prwcm-carefirst.com_pool load-balancing-mode round-robin members add {  prwcm1:any  prwcm2:any  } monitor gateway-icmp
+create pool rqeprod.carefirst.com_pool load-balancing-mode round-robin members add {  pgwaspr3:any  pgwaspr4:any  } monitor gateway-icmp
+create pool safetynet-http_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1-safetynet:80  sv-sp10wfe-p2-safetynet:80  sv-sp10wfe-p3-safetynet:80  } monitor safetynet-http_mon
+create pool safetynet-https_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1-safetynet:443  sv-sp10wfe-p2-safetynet:443  sv-sp10wfe-p3-safetynet:443  } monitor safetynet-https_mon
+create pool sbcprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool share_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1-share:80  sv-sp10wfe-p2-share:80  sv-sp10wfe-p3-share:80  } monitor share_mon
+create pool share-https_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1-share:443  sv-sp10wfe-p2-share:443  sv-sp10wfe-p3-share:443  } monitor share-https_mon
+create pool shpt-sheriff_pool load-balancing-mode round-robin members add {  SV-SP10WFE-P1-a:80  SV-SP10WFE-P2-a:80  SV-SP10WFE-P3-a:80  } monitor shpt-sheriff_mon
+create pool shpt-sheriff-ssl_pool load-balancing-mode round-robin members add {  SV-SP10WFE-P1-a:443  SV-SP10WFE-P2-a:443  SV-SP10WFE-P3-a:443  } monitor shpt-sheriff-ssl_mon
+create pool shrptprod_pool load-balancing-mode round-robin members add {  sv-shrptweb-p1:any  sv-shrptweb-p2:any  } monitor shrptprod_mon
+create pool sm-ambersms-prod_pool load-balancing-mode round-robin members add {  sm-ambersms-p1:any  sm-ambersms-p2:any  } monitor gateway-icmp
+create pool sp2apps_pool load-balancing-mode round-robin members add {  sv-sp10wfe-sp2app-p1:80  sv-sp10wfe-sp2app-p2:80  sv-sp10wfe-sp2app-p3:80  } monitor sp2apps_mon
+create pool sp2apps-ssl_pool load-balancing-mode round-robin members add {  sv-sp10wfe-sp2app-p1:443  sv-sp10wfe-sp2app-p2:443  sv-sp10wfe-sp2app-p3:443  } monitor sp2apps-ssl_mon
+create pool spapps_pool load-balancing-mode round-robin members add {  sv-sp10wfe-spapp-p1:80  sv-sp10wfe-spapp-p2:80  sv-sp10wfe-spapp-p3:80  } monitor spapps_mon
+create pool spapps-ssl_pool load-balancing-mode round-robin members add {  sv-sp10wfe-spapp-p3:443  sv-sp10wfe-spapp-p1:443  sv-sp10wfe-spapp-p2:443  } monitor spapps-ssl_mon
+create pool splunk_pool load-balancing-mode round-robin members add {  svl-securitysyslog-p1:80  svl-securitysyslog-p2:80  } monitor splunk_mon
+create pool sv-sp-10wfe-vip_pool load-balancing-mode round-robin members add {  sv-sp-10wfe-p1:any  sv-sp-10wfe-p2:any  sv-sp-10wfe-p3:any  } monitor sv-sp-10wfe-vip_mon
+create pool sv-sp10wfe_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1:80  sv-sp10wfe-p2:80  sv-sp10wfe-p3:80  } monitor sv-sp10wfe_mon
+create pool sv-sp10wfe-secure_pool load-balancing-mode round-robin members add {  sv-sp10wfe-p1:443  sv-sp10wfe-p2:443  sv-sp10wfe-p3:443  } monitor sv-sp10wfe-secure_mon
+create pool sv-trzfct-p4_pool load-balancing-mode round-robin members add {  sb-trzfct-p1:any  sb-trzfct-p2:any  sb-trzfct-p3:any  } monitor gateway-icmp
+create pool sv-trzfct-p6_pool load-balancing-mode round-robin members add {  SV-TRZFXI-P02:any  SV-TRZFXI-P01:any  } monitor gateway-icmp
+create pool sv-trzfct-p7_pool load-balancing-mode round-robin members add {  sv-trzfct-p4:any  sv-trzfct-p5:any  } monitor gateway-icmp
+create pool sv-trzwas-p5_pool load-balancing-mode round-robin members add {  sv-drggrp-p3:any  sv-trzwas-p3:any  } monitor gateway-icmp
+create pool sv-trzwas-p6_pool load-balancing-mode round-robin members add {  sv-drggrp-p4:any  sv-trzwas-p4:any  sv-drggrp-p4:any  sv-trzwas-p4:any  sv-drggrp-p4:any  sv-trzwas-p4:any  } monitor sv-trzwas-p6_mon
+create pool svtimagt_pool load-balancing-mode round-robin members add {  sv-sso-p2:any  } monitor gateway-icmp
+create pool svtrms_pool load-balancing-mode round-robin members add {  sb-trzfct-p1:any  sb-trzfct-p2:any  sb-trzfct-p3:any  } monitor svtrms_mon
+create pool tam-ldap-vip_pool load-balancing-mode round-robin members add {  itamldpp1:any  itamldpp2:any  } monitor gateway-icmp
+create pool tamwaspp_pool load-balancing-mode round-robin members add {  tamwasp1:any  tamwasp2:any  } monitor gateway-icmp
+create pool tblwdstprd1_pool load-balancing-mode round-robin members add {  tblwdstp2:any  tblwdstp1:any  } monitor tblwdstprd1_mon
+create pool tblwdstprd2_pool load-balancing-mode round-robin members add {  tblwdstp1:any  tblwdstp2:any  } monitor tblwdstprd2_mon
+create pool tdipp_pool load-balancing-mode round-robin members add {  itimdb2p2-tdipp:1099  itamwasp1-tdipp:1099  } monitor tdipp_mon
+create pool tibhsc_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc_mon
+create pool tibhsc-1_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  CFDocumentWriter-hsctib2:any  CFDocumentWriter-hsctib2:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc-1_mon
+create pool tibhsc-vip_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc-vip_mon
+create pool tibhsc_1_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc_1_mon
+create pool tibhsc_MO_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc_MO_mon
+create pool tibhsc_MO_SandE_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc_MO_SandE_mon
+create pool tibhsc_a_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc_a_mon
+create pool tibhsc_b_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc_b_mon
+create pool tibhsc_c_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib2:any  CFDocumentWriter-hsctib1:any  } monitor tibhsc_c_mon
+create pool tibhsc_d_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibhsc_d_mon
+create pool tibmasstran_pool load-balancing-mode round-robin members add {  CFDocumentWriter-hsctib1:any  CFDocumentWriter-hsctib2:any  } monitor tibmasstran_mon
+create pool tibpeprd_pool load-balancing-mode round-robin members add {  svl-tibpe-p1:15050  svl-tibpe-p2:15050  } monitor tibpeprd_mon
+create pool timldpp_pool load-balancing-mode round-robin members add {  tampolp1:any  tampolp2:any  } monitor gateway-icmp
+create pool timwaspp_pool load-balancing-mode round-robin members add {  timwasp1:any  timwasp2:any  } monitor gateway-icmp
+create pool webappint_pool load-balancing-mode round-robin members add {  itamwbsp3.associate-inside:any  itamwbsp4.associate-inside:any  tamwbsp4:any  tamwbsp5:any  } monitor gateway-icmp
+create pool wellprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+create pool wfprod_pool load-balancing-mode round-robin members add {  legthin-prd-1:any  legthin-prd-2:any  } monitor gateway-icmp
+
+		Existing Site Summary:
+
+create virtual AE2Utilities { destination 170.22.114.14%114:9001 profiles add { tcp } source-address-translation { type automap }  pool AE2Utilities_pool }
+
+create virtual CFDocumentWriter { destination 170.22.114.117%114:12700 profiles add { tcp } source-address-translation { type automap }  pool CFDocumentWriter_pool }
+
+create virtual CFODSNascoAccums { destination 170.22.114.117%114:9726 profiles add { tcp } source-address-translation { type automap }  pool CFODSNascoAccums_pool }
+
+create virtual CFODSNascoEligibility { destination 170.22.114.117%114:9317 profiles add { tcp } source-address-translation { type automap }  pool CFODSNascoEligibility_pool }
+
+create virtual CFODSProvider { destination 170.22.114.117%114:10760 profiles add { tcp } source-address-translation { type automap }  pool CFODSProvider_pool }
+
+create virtual Citrix-Web-Interface { destination 170.22.114.74%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool Citrix-Web-Interface_pool }
+
+create virtual Citrix-Web-Interface-B { destination 170.22.114.157%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool Citrix-Web-Interface-B_pool }
+
+create virtual HEPMS { destination 170.22.114.148%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool HEPMS_pool }
+
+create virtual ODSBenefitsR2 { destination 170.22.114.117%114:9318 profiles add { tcp } source-address-translation { type automap }  pool ODSBenefitsR2_pool }
+
+create virtual ProvVoucherPDFGeneration { destination 170.22.114.139%114:10749 profiles add { tcp } source-address-translation { type automap }  pool ProvVoucherPDFGeneration_pool }
+
+create virtual RemittanceService { destination 170.22.114.198%114:9879 profiles add { tcp } source-address-translation { type automap }  pool RemittanceService_pool }
+
+create virtual aeprod { destination 170.22.114.39%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool aeprod_pool }
+
+create virtual aesbatchprod { destination 170.22.114.16%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool aesbatchprod_pool }
+
+create virtual aesprod { destination 170.22.114.15%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool aesprod_pool }
+
+create virtual amberproxyp1:16070 { destination 170.22.114.37%114:16070 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp1:16070_pool }
+
+create virtual amberproxyp1:16080 { destination 170.22.114.37%114:16080 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp1:16080_pool }
+
+create virtual amberproxyp1:16090 { destination 170.22.114.37%114:16090 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp1:16090_pool }
+
+create virtual amberproxyp1:16100 { destination 170.22.114.37%114:16100 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp1:16100_pool }
+
+create virtual amberproxyp2 { destination 170.22.114.62%114:16060 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp2_pool }
+
+create virtual amberproxyp2-vip { destination 170.22.115.2%114:16080 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp2-vip_pool }
+
+create virtual amberproxyp3-vip { destination 170.22.115.3%114:16070 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp3-vip_pool }
+
+create virtual amberproxyp3-vip-1 { destination 170.22.115.3%114:16090 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp3-vip-1_pool }
+
+create virtual amberproxyp4-vip { destination 170.22.115.4%114:16100 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp4-vip_pool }
+
+create virtual amberproxyp5-vip { destination 170.22.115.5%114:16050 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp5-vip_pool }
+
+create virtual amberproxyp5-vip-1 { destination 170.22.115.5%114:16060 profiles add { tcp } source-address-translation { type automap }  pool amberproxyp5-vip-1_pool }
+
+create virtual arsapp { destination 170.22.114.125%114:any profiles add { tcp } source-address-translation { type automap }  pool arsapp_pool }
+
+create virtual arsweb { destination 170.22.114.124%114:any profiles add { tcp } source-address-translation { type automap }  pool arsweb_pool }
+
+create virtual axxfer-prod { destination 170.22.114.240%114:any profiles add { tcp axxfer-prod-http-profile } source-address-translation { type automap }  pool axxfer-prod_pool }
+
+create virtual axxfer-prod2 { destination 170.22.114.243%114:any profiles add { tcp axxfer-prod2-http-profile } source-address-translation { type automap }  pool axxfer-prod2_pool }
+
+create virtual benprod { destination 170.22.114.118%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool benprod_pool }
+
+create virtual benwsprod { destination 170.22.114.119%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool benwsprod_pool }
+
+create virtual boarddev-http { destination 170.22.114.203%114:80 profiles add { tcp } source-address-translation { type automap }  pool boarddev-http_pool }
+
+create virtual boarddev-https { destination 170.22.114.203%114:443 profiles add { tcp } source-address-translation { type automap }  pool boarddev-https_pool }
+
+create virtual brokerqa.insidecarefirst { destination 170.22.184.26%114:80 profiles add { tcp } source-address-translation { type automap }  pool brokerqa.insidecarefirst_pool }
+
+create virtual brokerqa.insidecarefirst-ssl { destination 170.22.184.26%114:443 profiles add { tcp } source-address-translation { type automap }  pool brokerqa.insidecarefirst-ssl_pool }
+
+create virtual brokerstg.insidecarefirst { destination 170.22.184.23%114:80 profiles add { tcp } source-address-translation { type automap }  pool brokerstg.insidecarefirst_pool }
+
+create virtual brokerstg.insidecarefirst-ssl { destination 170.22.184.23%114:443 profiles add { tcp } source-address-translation { type automap }  pool brokerstg.insidecarefirst-ssl_pool }
+
+create virtual ccwasprod.carefirst.com { destination 170.22.114.120%114:any profiles add { tcp } source-address-translation { type automap }  pool ccwasprod.carefirst.com_pool }
+
+create virtual cdw { destination 170.22.114.151%114:any profiles add { tcp } source-address-translation { type automap }  pool cdw_pool }
+
+create virtual cffacetssvcgrp1c { destination 170.22.114.110%114:12638 profiles add { tcp cffacetssvcgrp1c-tcp-profile } source-address-translation { type automap }  pool cffacetssvcgrp1c_pool }
+
+create virtual cgprod { destination 170.22.114.98%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool cgprod_pool }
+
+create virtual clarity { destination 170.22.114.140%114:any profiles add { tcp clarity-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool clarity_pool }
+
+create virtual document-mail { destination 170.22.114.176%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool document-mail_pool }
+
+create virtual drggrp { destination 170.22.114.65%114:any profiles add { tcp } source-address-translation { type automap }  pool drggrp_pool }
+
+create virtual ecom.carefirst.com { destination 170.22.114.239%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool ecom.carefirst.com_pool }
+
+create virtual esprod.carefirst.com { destination 170.22.114.81%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool esprod.carefirst.com_pool }
+
+create virtual esso.security { destination 170.22.114.52%114:any profiles add { tcp } source-address-translation { type automap }  pool esso.security_pool }
+
+create virtual ewrpnwpprod { destination 170.22.114.51%114:any profiles add { tcp } source-address-translation { type automap }  pool ewrpnwpprod_pool }
+
+create virtual ewrpnwpsupt { destination 170.22.114.50%114:any profiles add { tcp } source-address-translation { type automap }  pool ewrpnwpsupt_pool }
+
+create virtual fepbridgeservices { destination 170.22.115.17%114:80 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool fepbridgeservices_pool }
+
+create virtual fepbridgeservices-https { destination 170.22.115.17%114:443 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool fepbridgeservices-https_pool }
+
+create virtual fepchk { destination 170.22.115.24%114:80 profiles add { tcp } source-address-translation { type automap }  pool fepchk_pool }
+
+create virtual feplpgprd.carefirst.com { destination 170.22.114.113%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool feplpgprd.carefirst.com_pool }
+
+create virtual flwas { destination 170.22.115.47%114:80 profiles add { tcp } source-address-translation { type automap }  pool flwas_pool }
+
+create virtual flwas-443 { destination 170.22.115.47%114:443 profiles add { tcp } source-address-translation { type automap }  pool flwas-443_pool }
+
+create virtual flwasp { destination 170.22.114.137%114:any profiles add { tcp } source-address-translation { type automap }  pool flwasp_pool }
+
+create virtual gridcontrol.carefirst.com { destination 170.22.114.181%114:any profiles add { tcp } source-address-translation { type automap }  pool gridcontrol.carefirst.com_pool }
+
+create virtual hsctib-cgw { destination 170.22.114.197%114:any profiles add { tcp } source-address-translation { type automap }  pool hsctib-cgw_pool }
+
+create virtual im6.carefirst.com { destination 170.22.114.97%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool im6.carefirst.com_pool }
+
+create virtual impact360-iis { destination 170.22.114.138%114:7001 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool impact360-iis_pool }
+
+create virtual impact360-web { destination 170.22.114.138%114:80 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool impact360-web_pool }
+
+create virtual initappa { destination 170.22.114.220%114:any profiles add { tcp } source-address-translation { type automap }  pool initappa_pool }
+
+create virtual initappb { destination 170.22.114.223%114:any profiles add { tcp } source-address-translation { type automap }  pool initappb_pool }
+
+create virtual itimappp { destination 170.22.124.52%114:any profiles add { tcp } source-address-translation { type automap }  pool itimappp_pool }
+
+create virtual itimldapp { destination 170.22.124.53%114:any profiles add { tcp itimldapp-http-profile } source-address-translation { type automap }  pool itimldapp_pool }
+
+create virtual ldapp { destination 170.22.114.115%114:any profiles add { tcp ldapp-tcp-profile } source-address-translation { type automap }  pool ldapp_pool }
+
+create virtual ldapwebp { destination 170.22.114.116%114:any profiles add { tcp ldapwebp-http-profile } source-address-translation { type automap }  pool ldapwebp_pool }
+
+create virtual legthin-prd { destination 170.22.114.96%114:80 profiles add { tcp } source-address-translation { type automap }  pool legthin-prd_pool }
+
+create virtual livesite { destination 170.22.114.212%114:any profiles add { tcp } source-address-translation { type automap }  pool livesite_pool }
+
+create virtual livesiteint { destination 170.22.115.49%114:any profiles add { tcp } source-address-translation { type automap }  pool livesiteint_pool }
+
+create virtual mhub-prod { destination 170.22.115.16%114:8080 profiles add { tcp } source-address-translation { type automap }  pool mhub-prod_pool }
+
+create virtual myinside { destination 170.22.114.78%114:any profiles add { tcp myinside-tcp-profile } source-address-translation { type automap }  pool myinside_pool }
+
+create virtual mysite.carefirst { destination 170.22.114.206%114:443 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool mysite.carefirst_pool }
+
+create virtual mysite.carefirst.com { destination 170.22.114.206%114:80 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool mysite.carefirst.com_pool }
+
+create virtual nascobenefits { destination 170.22.114.117%114:9593 profiles add { tcp } source-address-translation { type automap }  pool nascobenefits_pool }
+
+create virtual odscsdsprd { destination 170.22.114.134%114:any profiles add { tcp } source-address-translation { type automap }  pool odscsdsprd_pool }
+
+create virtual pcmh_prd-vip { destination 170.22.114.188%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool pcmh_prd-vip_pool }
+
+create virtual pcmhcareplan { destination 170.22.114.175%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool pcmhcareplan_pool }
+
+create virtual pcprod { destination 170.22.114.77%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool pcprod_pool }
+
+create virtual pcsprod-vip { destination 170.22.115.6%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool pcsprod-vip_pool }
+
+create virtual pegaprod { destination 170.22.114.38%114:any profiles add { tcp } source-address-translation { type automap }  pool pegaprod_pool }
+
+create virtual phub-prod { destination 170.22.115.15%114:8080 profiles add { tcp } source-address-translation { type automap }  pool phub-prod_pool }
+
+create virtual picaprod { destination 170.22.114.152%114:any profiles add { tcp } source-address-translation { type automap }  pool picaprod_pool }
+
+create virtual prodfacets { destination 170.22.114.76%114:any profiles add { tcp } source-address-translation { type automap }  pool prodfacets_pool }
+
+create virtual providercalldeflection { destination 170.22.114.139%114:9330 profiles add { tcp } source-address-translation { type automap }  pool providercalldeflection_pool }
+
+create virtual providerqa.insidecarefirst.com { destination 170.22.184.32%114:any profiles add { tcp } source-address-translation { type automap }  pool providerqa.insidecarefirst.com_pool }
+
+create virtual prptwas { destination 170.22.114.21%114:any profiles add { tcp prptwas-tcp-profile } source-address-translation { type automap }  pool prptwas_pool }
+
+create virtual prwcm-carefirst.com { destination 170.22.114.131%114:any profiles add { tcp prwcm-carefirst.com-tcp-profile } source-address-translation { type automap }  pool prwcm-carefirst.com_pool }
+
+create virtual rqeprod.carefirst.com { destination 170.22.114.180%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool rqeprod.carefirst.com_pool }
+
+create virtual safetynet-http { destination 170.22.114.254%114:80 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool safetynet-http_pool }
+
+create virtual safetynet-https { destination 170.22.114.254%114:443 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool safetynet-https_pool }
+
+create virtual sbcprod { destination 170.22.115.21%114:any profiles add { tcp } source-address-translation { type automap }  pool sbcprod_pool }
+
+create virtual share { destination 170.22.115.11%114:80 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool share_pool }
+
+create virtual share-https { destination 170.22.115.11%114:443 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool share-https_pool }
+
+create virtual shpt-sheriff { destination 170.22.114.95%114:80 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool shpt-sheriff_pool }
+
+create virtual shpt-sheriff-ssl { destination 170.22.114.95%114:443 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool shpt-sheriff-ssl_pool }
+
+create virtual shrptprod { destination 170.22.114.57%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool shrptprod_pool }
+
+create virtual sm-ambersms-prod { destination 170.22.114.27%114:any profiles add { tcp } source-address-translation { type automap }  pool sm-ambersms-prod_pool }
+
+create virtual sp2apps { destination 170.22.114.230%114:80 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool sp2apps_pool }
+
+create virtual sp2apps-ssl { destination 170.22.114.230%114:443 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool sp2apps-ssl_pool }
+
+create virtual spapps { destination 170.22.114.226%114:80 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool spapps_pool }
+
+create virtual spapps-ssl { destination 170.22.114.226%114:443 profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool spapps-ssl_pool }
+
+create virtual splunk { destination 170.22.115.44%114:80 profiles add { tcp } source-address-translation { type automap }  pool splunk_pool }
+
+create virtual sv-sp-10wfe-vip { destination 170.22.114.192%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool sv-sp-10wfe-vip_pool }
+
+create virtual sv-sp10wfe { destination 170.22.114.184%114:80 profiles add { tcp } source-address-translation { type automap }  pool sv-sp10wfe_pool }
+
+create virtual sv-sp10wfe-secure { destination 170.22.114.184%114:443 profiles add { tcp } source-address-translation { type automap }  pool sv-sp10wfe-secure_pool }
+
+create virtual sv-trzfct-p4 { destination 170.22.114.90%114:any profiles add { tcp } source-address-translation { type automap }  pool sv-trzfct-p4_pool }
+
+create virtual sv-trzfct-p6 { destination 170.22.114.85%114:any profiles add { tcp sv-trzfct-p6-tcp-profile } source-address-translation { type automap }  pool sv-trzfct-p6_pool }
+
+create virtual sv-trzfct-p7 { destination 170.22.114.86%114:any profiles add { tcp } source-address-translation { type automap }  pool sv-trzfct-p7_pool }
+
+create virtual sv-trzwas-p5 { destination 170.22.114.75%114:any profiles add { tcp } source-address-translation { type automap }  pool sv-trzwas-p5_pool }
+
+create virtual sv-trzwas-p6 { destination 170.22.114.76%114:any profiles add { tcp } source-address-translation { type automap }  pool sv-trzwas-p6_pool }
+
+create virtual svtimagt { destination 170.22.114.80%114:any profiles add { tcp } source-address-translation { type automap }  pool svtimagt_pool }
+
+create virtual svtrms { destination 170.22.114.61%114:any profiles add { tcp svtrms-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool svtrms_pool }
+
+create virtual tam-ldap-vip { destination 170.22.124.41%114:any profiles add { tcp tam-ldap-vip-tcp-profile tam-ldap-vip-http-profile } source-address-translation { type automap }  pool tam-ldap-vip_pool }
+
+create virtual tamwaspp { destination 170.22.124.42%114:any profiles add { tcp } source-address-translation { type automap }  pool tamwaspp_pool }
+
+create virtual tblwdstprd1 { destination 170.22.114.101%114:any profiles add { tcp tblwdstprd1-http-profile } source-address-translation { type automap }  pool tblwdstprd1_pool }
+
+create virtual tblwdstprd2 { destination 170.22.114.100%114:any profiles add { tcp tblwdstprd2-http-profile } source-address-translation { type automap }  pool tblwdstprd2_pool }
+
+create virtual tdipp { destination 170.22.124.80%114:1099 profiles add { tcp } source-address-translation { type automap }  pool tdipp_pool }
+
+create virtual tibhsc { destination 170.22.114.40%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc_pool }
+
+create virtual tibhsc-1 { destination 170.22.114.198%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc-1_pool }
+
+create virtual tibhsc-vip { destination 170.22.114.196%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc-vip_pool }
+
+create virtual tibhsc_1 { destination 170.22.114.117%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc_1_pool }
+
+create virtual tibhsc_MO { destination 170.22.114.110%114:any profiles add { tcp tibhsc_MO-tcp-profile } source-address-translation { type automap }  pool tibhsc_MO_pool }
+
+create virtual tibhsc_MO_SandE { destination 170.22.114.111%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc_MO_SandE_pool }
+
+create virtual tibhsc_a { destination 170.22.114.144%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc_a_pool }
+
+create virtual tibhsc_b { destination 170.22.114.145%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc_b_pool }
+
+create virtual tibhsc_c { destination 170.22.114.146%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc_c_pool }
+
+create virtual tibhsc_d { destination 170.22.114.147%114:any profiles add { tcp } source-address-translation { type automap }  pool tibhsc_d_pool }
+
+create virtual tibmasstran { destination 170.22.114.112%114:any profiles add { tcp } source-address-translation { type automap }  pool tibmasstran_pool }
+
+create virtual tibpeprd { destination 170.22.115.29%114:15050 profiles add { tcp } source-address-translation { type automap }  pool tibpeprd_pool }
+
+create virtual timldpp { destination 170.22.124.50%114:any profiles add { tcp } source-address-translation { type automap }  pool timldpp_pool }
+
+create virtual timwaspp { destination 170.22.124.45%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool timwaspp_pool }
+
+create virtual webappint { destination 170.22.184.22%114:any profiles add { tcp webappint-tcp-profile } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool webappint_pool }
+
+create virtual wellprod { destination 170.22.114.255%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool wellprod_pool }
+
+create virtual wfprod { destination 170.22.114.79%114:any profiles add { tcp } persist replace-all-with { source_addr }  source-address-translation { type automap }  pool wfprod_pool }
+
+There are 272 real servers defined
+There are 135 Virtual Servers defined
